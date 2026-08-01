@@ -1,0 +1,44 @@
+﻿{
+    "101":  {
+                "id":  101,
+                "group":  1,
+                "img":  "fish_1",
+                "sk":  "fish_1"
+            },
+    "102":  {
+                "id":  102,
+                "group":  1,
+                "img":  "fish_2",
+                "sk":  "fish_2"
+            },
+    "103":  {
+                "id":  103,
+                "group":  1,
+                "img":  "fish_3",
+                "sk":  "fish_3"
+            },
+    "104":  {
+                "id":  104,
+                "group":  1,
+                "img":  "fish_4",
+                "sk":  "fish_4"
+            },
+    "105":  {
+                "id":  105,
+                "group":  1,
+                "img":  "fish_5",
+                "sk":  "fish_5"
+            },
+    "106":  {
+                "id":  106,
+                "group":  1,
+                "img":  "fish_6",
+                "sk":  "fish_6"
+            },
+    "107":  {
+                "id":  107,
+                "group":  1,
+                "img":  "fish_7",
+                "sk":  "fish_7"
+            }
+}

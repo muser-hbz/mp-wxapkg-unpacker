@@ -1,0 +1,621 @@
+﻿{
+    "1":  {
+              "id":  1,
+              "define":  "PuzzleLine",
+              "rate":  [
+                           8,
+                           8
+                       ]
+          },
+    "2":  {
+              "id":  2,
+              "define":  "UndoTime",
+              "value":  10
+          },
+    "3":  {
+              "id":  3,
+              "define":  "WaitBlock",
+              "value":  3
+          },
+    "4":  {
+              "id":  4,
+              "define":  "PuzzlePlaceNum",
+              "value":  1
+          },
+    "5":  {
+              "id":  5,
+              "define":  "PuzzleRemoveNum",
+              "value":  1
+          },
+    "6":  {
+              "id":  6,
+              "define":  "PuzzleSerialRemove",
+              "value":  3
+          },
+    "7":  {
+              "id":  7,
+              "define":  "PuzzleRebornNum",
+              "value":  3
+          },
+    "8":  {
+              "id":  8,
+              "define":  "PuzzleRebornItem",
+              "rate":  [
+                           1,
+                           1
+                       ]
+          },
+    "9":  {
+              "id":  9,
+              "define":  "ADShowCount",
+              "value":  3
+          },
+    "10":  {
+               "id":  10,
+               "define":  "PuzzleNOADLicense",
+               "value":  3
+           },
+    "11":  {
+               "id":  11,
+               "define":  "AdventureRebornNum",
+               "value":  3
+           },
+    "12":  {
+               "id":  12,
+               "define":  "AdventurebornItem",
+               "rate":  [
+                            1,
+                            1
+                        ]
+           },
+    "13":  {
+               "id":  13,
+               "define":  "DropLine",
+               "rate":  [
+                            37,
+                            19
+                        ]
+           },
+    "14":  {
+               "id":  14,
+               "define":  "DropCycle",
+               "rate":  [
+                            3,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2,
+                            1,
+                            2,
+                            1,
+                            5,
+                            3,
+                            3,
+                            2,
+                            3,
+                            2,
+                            3,
+                            2,
+                            3,
+                            1,
+                            1,
+                            4,
+                            3,
+                            2,
+                            3,
+                            1,
+                            1,
+                            2,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            6,
+                            1,
+                            2,
+                            4,
+                            2,
+                            3,
+                            4,
+                            3,
+                            1,
+                            1,
+                            5,
+                            3,
+                            2,
+                            1,
+                            1,
+                            8,
+                            1,
+                            2,
+                            5,
+                            3,
+                            3,
+                            2,
+                            2,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            1,
+                            6,
+                            2,
+                            3,
+                            2,
+                            2,
+                            3,
+                            1,
+                            1,
+                            2,
+                            4,
+                            4,
+                            4,
+                            2,
+                            8,
+                            1,
+                            3,
+                            1,
+                            4,
+                            1,
+                            2,
+                            2,
+                            3
+                        ]
+           },
+    "15":  {
+               "id":  15,
+               "define":  "DropRemoveNum",
+               "value":  10
+           },
+    "16":  {
+               "id":  16,
+               "define":  "DropSpeed",
+               "value":  0
+           },
+    "17":  {
+               "id":  17,
+               "define":  "DropRebornNum",
+               "value":  3
+           },
+    "18":  {
+               "id":  18,
+               "define":  "DropNOADLicense",
+               "value":  3
+           },
+    "19":  {
+               "id":  19,
+               "define":  "SidebarReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "20":  {
+               "id":  20,
+               "define":  "DailyChallengeTime",
+               "value":  0
+           },
+    "21":  {
+               "id":  21,
+               "define":  "DailyChallengeLevel",
+               "rate":  [
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            19,
+                            20,
+                            21,
+                            22,
+                            23,
+                            24,
+                            25,
+                            26,
+                            27,
+                            28,
+                            29,
+                            30,
+                            31,
+                            32,
+                            33,
+                            34,
+                            35,
+                            36,
+                            37,
+                            38,
+                            39,
+                            40,
+                            41,
+                            42,
+                            43,
+                            44,
+                            45,
+                            46,
+                            47,
+                            48,
+                            49,
+                            50,
+                            51,
+                            52,
+                            53,
+                            54,
+                            55,
+                            56,
+                            57,
+                            58,
+                            59
+                        ]
+           },
+    "22":  {
+               "id":  22,
+               "define":  "DropBlockColor",
+               "rate":  [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8
+                        ]
+           },
+    "23":  {
+               "id":  23,
+               "define":  "DropBlockColorNum",
+               "rate":  [
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            3,
+                            3,
+                            3
+                        ]
+           },
+    "24":  {
+               "id":  24,
+               "define":  "DropRebornItem",
+               "rate":  [
+                            3,
+                            1
+                        ]
+           },
+    "25":  {
+               "id":  25,
+               "define":  "DailyFreeGame",
+               "value":  1
+           },
+    "26":  {
+               "id":  26,
+               "define":  "AdventurePuzzleNOADLicense",
+               "value":  1
+           },
+    "27":  {
+               "id":  27,
+               "define":  "GuideMap",
+               "v2Arr":  [
+                             [
+                                 0,
+                                 0,
+                                 1,
+                                 1,
+                                 1,
+                                 1,
+                                 0,
+                                 0
+                             ],
+                             [
+                                 0,
+                                 0,
+                                 1,
+                                 1,
+                                 1,
+                                 1,
+                                 0,
+                                 0
+                             ],
+                             [
+                                 3,
+                                 3,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 7,
+                                 7
+                             ],
+                             [
+                                 3,
+                                 3,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 7,
+                                 7
+                             ],
+                             [
+                                 3,
+                                 3,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 7,
+                                 7
+                             ],
+                             [
+                                 3,
+                                 3,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 7,
+                                 7
+                             ],
+                             [
+                                 0,
+                                 0,
+                                 5,
+                                 5,
+                                 5,
+                                 5,
+                                 0,
+                                 0
+                             ],
+                             [
+                                 0,
+                                 0,
+                                 5,
+                                 5,
+                                 5,
+                                 5,
+                                 0,
+                                 0
+                             ]
+                         ]
+           },
+    "28":  {
+               "id":  28,
+               "define":  "GuideBlockGroup",
+               "v2Arr":  [
+                             [
+                                 -1,
+                                 103,
+                                 -1
+                             ]
+                         ]
+           },
+    "29":  {
+               "id":  29,
+               "define":  "DropXSpeed",
+               "value":  60,
+               "rate":  [
+                            40,
+                            80
+                        ]
+           },
+    "30":  {
+               "id":  30,
+               "define":  "DropYSpeed",
+               "value":  30,
+               "rate":  [
+                            20,
+                            40
+                        ]
+           },
+    "31":  {
+               "id":  31,
+               "define":  "DropYMoveRange",
+               "v2Arr":  [
+                             [
+                                 -300,
+                                 300
+                             ],
+                             [
+                                 -300,
+                                 300
+                             ]
+                         ]
+           },
+    "32":  {
+               "id":  32,
+               "define":  "TableADCount",
+               "value":  3
+           },
+    "33":  {
+               "id":  33,
+               "define":  "DailyShareCount",
+               "value":  1
+           },
+    "34":  {
+               "id":  34,
+               "define":  "AdventureScaleRange",
+               "rate":  [
+                            0.8,
+                            1.2
+                        ]
+           },
+    "35":  {
+               "id":  35,
+               "define":  "AdventureFreeNOADLicense",
+               "value":  5
+           },
+    "36":  {
+               "id":  36,
+               "define":  "ClassicFreeGame",
+               "value":  3
+           },
+    "37":  {
+               "id":  37,
+               "define":  "ClassicRemoveNum",
+               "value":  10
+           },
+    "38":  {
+               "id":  38,
+               "define":  "ClassicRebornNum",
+               "value":  3
+           },
+    "39":  {
+               "id":  39,
+               "define":  "ClassicRebornItem",
+               "rate":  [
+                            5,
+                            1
+                        ]
+           },
+    "40":  {
+               "id":  40,
+               "define":  "SubscriptionReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "41":  {
+               "id":  41,
+               "define":  "WXCollectionReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "42":  {
+               "id":  42,
+               "define":  "WXSaveReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "43":  {
+               "id":  43,
+               "define":  "TTCollectionReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "44":  {
+               "id":  44,
+               "define":  "TTSaveReward",
+               "v2Arr":  [
+                             [
+                                 1,
+                                 1
+                             ]
+                         ]
+           },
+    "45":  {
+               "id":  45,
+               "define":  "SubscriptionRemind",
+               "value":  5
+           },
+    "46":  {
+               "id":  46,
+               "define":  "SaveRemind",
+               "value":  7
+           },
+    "47":  {
+               "id":  47,
+               "define":  "ClassicQuicklyDropTime",
+               "value":  25
+           },
+    "48":  {
+               "id":  48,
+               "define":  "ProtectRange",
+               "rate":  [
+                            0,
+                            1,
+                            10
+                        ]
+           },
+    "49":  {
+               "id":  49,
+               "define":  "ProtectCount",
+               "rate":  [
+                            1,
+                            3,
+                            99
+                        ]
+           },
+    "50":  {
+               "id":  50,
+               "define":  "ProtectItem",
+               "rate":  [
+                            1,
+                            1
+                        ]
+           },
+    "51":  {
+               "id":  51,
+               "define":  "FirstUndoTime",
+               "value":  2
+           },
+    "52":  {
+               "id":  52,
+               "define":  "GameBeginGainItem",
+               "rate":  [
+                            101,
+                            1
+                        ]
+           },
+    "53":  {
+               "id":  53,
+               "define":  "SubscriptionGainItem",
+               "rate":  [
+                            102,
+                            1
+                        ]
+           },
+    "54":  {
+               "id":  54,
+               "define":  "AdventureGainItem",
+               "rate":  [
+                            50,
+                            104,
+                            1
+                        ]
+           },
+    "55":  {
+               "id":  55,
+               "define":  "DisturbBlock",
+               "value":  1
+           },
+    "56":  {
+               "id":  56,
+               "define":  "AdventureRebornTime",
+               "value":  10
+           },
+    "57":  {
+               "id":  57,
+               "define":  "PuzzleRebornTime",
+               "value":  10
+           },
+    "58":  {
+               "id":  58,
+               "define":  "DailyRebornTime",
+               "value":  10
+           }
+}

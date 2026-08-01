@@ -1,0 +1,32 @@
+﻿{
+    "quistFlowerCount":  {
+                             "id":  "quistFlowerCount",
+                             "name":  "问号花",
+                             "desc":  "问号花下落到斜坡才会显示最终食材",
+                             "icon":  "zaw_1"
+                         },
+    "holeCount":  {
+                      "id":  "holeCount",
+                      "name":  "洞口",
+                      "desc":  "洞口中会不断冒出新物品",
+                      "icon":  "zaw_2_1|zaw_2_2"
+                  },
+    "iceCount":  {
+                     "id":  "iceCount",
+                     "name":  "冰块",
+                     "desc":  "通过不断消除来解冻冰封的物品",
+                     "icon":  "zaw_4"
+                 },
+    "isWood":  {
+                   "id":  "isWood",
+                   "name":  "树桩",
+                   "desc":  "会阻挡物品的下落",
+                   "icon":  "zaw_3"
+               },
+    "blockCount":  {
+                       "id":  "blockCount",
+                       "name":  "多边形",
+                       "desc":  "会阻挡物品的下落，存在多种形状",
+                       "icon":  "zaw_5|zaw_6|zaw_7"
+                   }
+}

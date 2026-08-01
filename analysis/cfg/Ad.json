@@ -1,0 +1,214 @@
+﻿{
+    "1":  {
+              "id":  1,
+              "define":  "VideoAdventure",
+              "type":  1,
+              "share":  1,
+              "action":  100001,
+              "sdkSceneId":  "1"
+          },
+    "2":  {
+              "id":  2,
+              "define":  "VideoPuzzle",
+              "type":  1,
+              "share":  1,
+              "action":  200001,
+              "sdkSceneId":  "2"
+          },
+    "3":  {
+              "id":  3,
+              "define":  "VideoDrop",
+              "type":  1,
+              "share":  1,
+              "action":  300001,
+              "sdkSceneId":  "3"
+          },
+    "4":  {
+              "id":  4,
+              "define":  "VideoDaily",
+              "type":  1,
+              "share":  1,
+              "action":  500001,
+              "sdkSceneId":  "4"
+          },
+    "5":  {
+              "id":  5,
+              "define":  "VideoClassic",
+              "type":  1,
+              "share":  1,
+              "action":  400001,
+              "sdkSceneId":  "5"
+          },
+    "6":  {
+              "id":  6,
+              "define":  "VideoItem1",
+              "type":  1,
+              "share":  1,
+              "sdkSceneId":  "6"
+          },
+    "7":  {
+              "id":  7,
+              "define":  "VideoItem2",
+              "type":  1,
+              "share":  1,
+              "sdkSceneId":  "7"
+          },
+    "8":  {
+              "id":  8,
+              "define":  "VideoItem3",
+              "type":  1,
+              "share":  1,
+              "sdkSceneId":  "8"
+          },
+    "9":  {
+              "id":  9,
+              "define":  "VideoItem4",
+              "type":  1,
+              "share":  1,
+              "sdkSceneId":  "9"
+          },
+    "10":  {
+               "id":  10,
+               "define":  "VideoAdventureDialog",
+               "type":  2,
+               "sdkSceneId":  "10"
+           },
+    "11":  {
+               "id":  11,
+               "define":  "VideoPuzzleDialog",
+               "type":  2,
+               "sdkSceneId":  "11"
+           },
+    "12":  {
+               "id":  12,
+               "define":  "VideoDropDialog",
+               "type":  2,
+               "sdkSceneId":  "12"
+           },
+    "13":  {
+               "id":  13,
+               "define":  "VideoDailyDialog",
+               "type":  2,
+               "sdkSceneId":  "13"
+           },
+    "14":  {
+               "id":  14,
+               "define":  "VideoClassicDialog",
+               "type":  2,
+               "sdkSceneId":  "14"
+           },
+    "15":  {
+               "id":  15,
+               "define":  "VideoAdventureRevive",
+               "type":  1,
+               "sdkSceneId":  "15"
+           },
+    "16":  {
+               "id":  16,
+               "define":  "VideoPuzzleRevive",
+               "type":  1,
+               "sdkSceneId":  "16"
+           },
+    "17":  {
+               "id":  17,
+               "define":  "VideoDropRevive",
+               "type":  1,
+               "sdkSceneId":  "17"
+           },
+    "18":  {
+               "id":  18,
+               "define":  "VideoDailyRevive",
+               "type":  1,
+               "sdkSceneId":  "18"
+           },
+    "19":  {
+               "id":  19,
+               "define":  "VideoClassicRevive",
+               "type":  1,
+               "sdkSceneId":  "19"
+           },
+    "20":  {
+               "id":  20,
+               "define":  "VideoCollect",
+               "type":  1,
+               "sdkSceneId":  "20"
+           },
+    "21":  {
+               "id":  21,
+               "define":  "VideoRefresh",
+               "type":  1,
+               "sdkSceneId":  "21"
+           },
+    "22":  {
+               "id":  22,
+               "define":  "VideoUnlockBox1",
+               "type":  1,
+               "sdkSceneId":  "22"
+           },
+    "23":  {
+               "id":  23,
+               "define":  "VideoUnlockBox2",
+               "type":  1,
+               "sdkSceneId":  "23"
+           },
+    "24":  {
+               "id":  24,
+               "define":  "VideoRevive",
+               "type":  1,
+               "sdkSceneId":  "24"
+           },
+    "25":  {
+               "id":  25,
+               "define":  "VideoBoosterCollect",
+               "type":  1,
+               "sdkSceneId":  "25"
+           },
+    "26":  {
+               "id":  26,
+               "define":  "VideoBoosterUnlock",
+               "type":  1,
+               "sdkSceneId":  "26"
+           },
+    "27":  {
+               "id":  27,
+               "define":  "VideoUnlockBoxAgain",
+               "type":  1,
+               "sdkSceneId":  "27"
+           },
+    "28":  {
+               "id":  28,
+               "define":  "VideoUnlockActive",
+               "type":  1,
+               "sdkSceneId":  "28"
+           },
+    "29":  {
+               "id":  29,
+               "define":  "VideoAgain",
+               "type":  1,
+               "sdkSceneId":  "29"
+           },
+    "30":  {
+               "id":  30,
+               "define":  "VideoSingleUnlock",
+               "type":  1,
+               "sdkSceneId":  "30"
+           },
+    "31":  {
+               "id":  31,
+               "define":  "VideoUnlockBarbecue",
+               "type":  1,
+               "sdkSceneId":  "31"
+           },
+    "32":  {
+               "id":  32,
+               "define":  "VideoUnlockChallenge",
+               "type":  1,
+               "sdkSceneId":  "32"
+           },
+    "33":  {
+               "id":  33,
+               "define":  "VideoDailyTaskSignIn",
+               "type":  1,
+               "sdkSceneId":  "33"
+           }
+}

@@ -1,0 +1,98 @@
+﻿{
+    "HitCD":  {
+                  "id":  "HitCD",
+                  "parameter":  "6"
+              },
+    "HitCDAttenuation":  {
+                             "id":  "HitCDAttenuation",
+                             "parameter":  "0"
+                         },
+    "HitLeast":  {
+                     "id":  "HitLeast",
+                     "parameter":  "0"
+                 },
+    "HitCount":  {
+                     "id":  "HitCount",
+                     "parameter":  "5|8|11"
+                 },
+    "HitShowLabCounts":  {
+                             "id":  "HitShowLabCounts",
+                             "parameter":  "1"
+                         },
+    "HitShowLabOpacity":  {
+                              "id":  "HitShowLabOpacity",
+                              "parameter":  "[1]"
+                          },
+    "RefreshCount":  {
+                         "id":  "RefreshCount",
+                         "parameter":  "3"
+                     },
+    "EliminateCount":  {
+                           "id":  "EliminateCount",
+                           "parameter":  "3"
+                       },
+    "EliminateCorrect":  {
+                             "id":  "EliminateCorrect",
+                             "parameter":  "[1,3,6]"
+                         },
+    "MaxFruitTypeCount":  {
+                              "id":  "MaxFruitTypeCount",
+                              "parameter":  "36"
+                          },
+    "FallingRate":  {
+                        "id":  "FallingRate",
+                        "parameter":  "2"
+                    },
+    "HotPotThemeId":  {
+                          "id":  "HotPotThemeId",
+                          "parameter":  "1"
+                      },
+    "SlotBubbleText2":  {
+                            "id":  "SlotBubbleText2",
+                            "parameter":  "一次解锁两个槽位！"
+                        },
+    "SlotBubbleText1":  {
+                            "id":  "SlotBubbleText1",
+                            "parameter":  "槽位紧张？解锁槽位！"
+                        },
+    "CrossDayTime":  {
+                         "id":  "CrossDayTime",
+                         "parameter":  "0.166666666666667"
+                     },
+    "TotalLoginDays":  {
+                           "id":  "TotalLoginDays",
+                           "parameter":  "4"
+                       },
+    "ExpertChallengeThemeId":  {
+                                   "id":  "ExpertChallengeThemeId",
+                                   "parameter":  "2"
+                               },
+    "ExpertChallengelevelCond":  {
+                                     "id":  "ExpertChallengelevelCond",
+                                     "parameter":  "5"
+                                 },
+    "DensitySpreadWeight":  {
+                                "id":  "DensitySpreadWeight",
+                                "parameter":  "[60,170,20,0]"
+                            },
+    "ExpertChallengeFreeCounts":  {
+                                      "id":  "ExpertChallengeFreeCounts",
+                                      "parameter":  "1"
+                                  },
+    "SecretBeginLevel":  {
+                             "id":  "SecretBeginLevel",
+                             "parameter":  "109"
+                         },
+    "SecretGetRate":  {
+                          "id":  "SecretGetRate",
+                          "parameter":  "5"
+                      },
+    "SecretShowRate":  {
+                           "id":  "SecretShowRate",
+                           "parameter":  "[100,50,50]"
+                       },
+    "ProgressSpreadWeight":  {
+                                 "id":  "ProgressSpreadWeight",
+                                 "parameter":  "[60,170,100,0]"
+                             }
+}

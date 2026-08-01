@@ -1,0 +1,14 @@
+﻿{
+    "101":  {
+                "id":  101,
+                "name":  "草地牛",
+                "levelData":  "LevelCowData",
+                "rewardTheme":  101
+            },
+    "102":  {
+                "id":  102,
+                "name":  "水果切片",
+                "levelData":  "LevelSliceData",
+                "rewardTheme":  102
+            }
+}

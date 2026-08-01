@@ -1,0 +1,10 @@
+﻿{
+    "1000":  {
+                 "id":  1000,
+                 "viewName":  "ZY_MainPanel"
+             },
+    "1001":  {
+                 "id":  1001,
+                 "viewName":  "ZY_GameSceneView"
+             }
+}

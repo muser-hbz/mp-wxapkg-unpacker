@@ -1,0 +1,42 @@
+﻿{
+    "2":  {
+              "id":  2,
+              "img":  "Txt_01",
+              "removeNum":  2,
+              "action":  "puzzle1",
+              "shockView":  0,
+              "vibrate":  0
+          },
+    "3":  {
+              "id":  3,
+              "img":  "Txt_02",
+              "removeNum":  2,
+              "action":  "puzzle2",
+              "shockView":  0,
+              "vibrate":  0
+          },
+    "4":  {
+              "id":  4,
+              "img":  "Txt_03",
+              "removeNum":  3,
+              "action":  "puzzle3",
+              "shockView":  0,
+              "vibrate":  0
+          },
+    "5":  {
+              "id":  5,
+              "img":  "Txt_04",
+              "removeNum":  3,
+              "action":  "puzzle4",
+              "shockView":  0,
+              "vibrate":  1
+          },
+    "6":  {
+              "id":  6,
+              "img":  "Txt_05",
+              "removeNum":  4,
+              "action":  "puzzle5",
+              "shockView":  0,
+              "vibrate":  1
+          }
+}

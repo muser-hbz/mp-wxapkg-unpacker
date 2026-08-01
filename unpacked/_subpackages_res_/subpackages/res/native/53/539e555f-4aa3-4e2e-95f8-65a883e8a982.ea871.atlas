@@ -1,0 +1,27 @@
+
+heidong.png
+size: 352,191
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guang01
+  rotate: false
+  xy: 2, 2
+  size: 221, 187
+  orig: 221, 187
+  offset: 0, 0
+  index: -1
+heidong_z
+  rotate: false
+  xy: 225, 66
+  size: 125, 123
+  orig: 125, 123
+  offset: 0, 0
+  index: -1
+xian1
+  rotate: true
+  xy: 225, 20
+  size: 44, 110
+  orig: 44, 110
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,114 @@
+﻿{
+    "100001":  {
+                   "id":  100001,
+                   "define":  "Adventure1"
+               },
+    "100002":  {
+                   "id":  100002,
+                   "define":  "Adventure2"
+               },
+    "100003":  {
+                   "id":  100003,
+                   "define":  "Adventure3"
+               },
+    "100004":  {
+                   "id":  100004,
+                   "define":  "Adventure4"
+               },
+    "100005":  {
+                   "id":  100005,
+                   "define":  "Adventure5"
+               },
+    "100006":  {
+                   "id":  100006,
+                   "define":  "Adventure6"
+               },
+    "200001":  {
+                   "id":  200001,
+                   "define":  "Puzzle1"
+               },
+    "200002":  {
+                   "id":  200002,
+                   "define":  "Puzzle2"
+               },
+    "200003":  {
+                   "id":  200003,
+                   "define":  "Puzzle3"
+               },
+    "200004":  {
+                   "id":  200004,
+                   "define":  "Puzzle4"
+               },
+    "200005":  {
+                   "id":  200005,
+                   "define":  "Puzzle5"
+               },
+    "200006":  {
+                   "id":  200006,
+                   "define":  "Puzzle6"
+               },
+    "300001":  {
+                   "id":  300001,
+                   "define":  "Drop1"
+               },
+    "300002":  {
+                   "id":  300002,
+                   "define":  "Drop2"
+               },
+    "300003":  {
+                   "id":  300003,
+                   "define":  "Drop3"
+               },
+    "300004":  {
+                   "id":  300004,
+                   "define":  "Drop4"
+               },
+    "300005":  {
+                   "id":  300005,
+                   "define":  "Drop5"
+               },
+    "300006":  {
+                   "id":  300006,
+                   "define":  "Drop6"
+               },
+    "400001":  {
+                   "id":  400001,
+                   "define":  "Classic1"
+               },
+    "400002":  {
+                   "id":  400002,
+                   "define":  "Classic2"
+               },
+    "400003":  {
+                   "id":  400003,
+                   "define":  "Classic3"
+               },
+    "400004":  {
+                   "id":  400004,
+                   "define":  "Classic4"
+               },
+    "500001":  {
+                   "id":  500001,
+                   "define":  "Daily1"
+               },
+    "500002":  {
+                   "id":  500002,
+                   "define":  "Daily2"
+               },
+    "500003":  {
+                   "id":  500003,
+                   "define":  "Daily3"
+               },
+    "500004":  {
+                   "id":  500004,
+                   "define":  "Daily4"
+               },
+    "500005":  {
+                   "id":  500005,
+                   "define":  "Daily5"
+               },
+    "500006":  {
+                   "id":  500006,
+                   "define":  "Daily6"
+               }
+}

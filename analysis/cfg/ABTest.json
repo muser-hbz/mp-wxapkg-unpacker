@@ -1,0 +1,46 @@
+﻿{
+    "levelDiffcultyAB":  {
+                             "id":  "levelDiffcultyAB",
+                             "key":  "expt_level_ab_0724"
+                         },
+    "unlockInviteFlowerAB":  {
+                                 "id":  "unlockInviteFlowerAB",
+                                 "key":  "expt_invite_flower"
+                             },
+    "reviveCountAB":  {
+                          "id":  "reviveCountAB",
+                          "key":  "expt_revive_count"
+                      },
+    "dynamicLevelAB":  {
+                           "id":  "dynamicLevelAB",
+                           "key":  "expt_dynamic_diff"
+                       },
+    "ComboSystemAB":  {
+                          "id":  "ComboSystemAB",
+                          "key":  "expt_combo"
+                      },
+    "AnimalAB":  {
+                     "id":  "AnimalAB",
+                     "key":  "expt_animal"
+                 },
+    "ExpertChallengeAB":  {
+                              "id":  "ExpertChallengeAB",
+                              "key":  "expt_expert"
+                          },
+    "densitySpreadVertical":  {
+                                  "id":  "densitySpreadVertical",
+                                  "key":  "expt_density_spread"
+                              },
+    "dailyTask":  {
+                      "id":  "dailyTask",
+                      "key":  "expt_daily_task"
+                  },
+    "ddaFlowStrategy":  {
+                            "id":  "ddaFlowStrategy",
+                            "key":  "flow_strategy_5_0"
+                        },
+    "progressSpreadVertical":  {
+                                   "id":  "progressSpreadVertical",
+                                   "key":  "progress_spread_2_0"
+                               }
+}

@@ -1,0 +1,34 @@
+
+shouji.png
+size: 924,632
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lizi
+  rotate: false
+  xy: 632, 186
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+theme_bf_3
+  rotate: false
+  xy: 2, 2
+  size: 628, 628
+  orig: 630, 629
+  offset: 2, 0
+  index: -1
+xing
+  rotate: false
+  xy: 632, 238
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ys2
+  rotate: false
+  xy: 632, 340
+  size: 290, 290
+  orig: 290, 290
+  offset: 0, 0
+  index: -1

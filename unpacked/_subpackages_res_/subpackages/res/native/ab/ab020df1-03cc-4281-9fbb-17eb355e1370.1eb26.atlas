@@ -1,0 +1,153 @@
+
+Caidai.png
+size: 579,450
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianGlow
+  rotate: true
+  xy: 2, 160
+  size: 288, 540
+  orig: 288, 540
+  offset: 0, 0
+  index: -1
+caidai/caidai_00
+  rotate: true
+  xy: 382, 2
+  size: 21, 70
+  orig: 163, 216
+  offset: 0, 0
+  index: -1
+caidai/caidai_01
+  rotate: false
+  xy: 544, 354
+  size: 29, 94
+  orig: 163, 216
+  offset: 1, 4
+  index: -1
+caidai/caidai_02
+  rotate: true
+  xy: 431, 117
+  size: 41, 118
+  orig: 163, 216
+  offset: 1, 8
+  index: -1
+caidai/caidai_03
+  rotate: true
+  xy: 289, 103
+  size: 55, 140
+  orig: 163, 216
+  offset: 2, 12
+  index: -1
+caidai/caidai_04
+  rotate: true
+  xy: 2, 84
+  size: 74, 158
+  orig: 163, 216
+  offset: 3, 16
+  index: -1
+caidai/caidai_05
+  rotate: true
+  xy: 2, 7
+  size: 75, 141
+  orig: 163, 216
+  offset: 9, 39
+  index: -1
+caidai/caidai_06
+  rotate: true
+  xy: 162, 82
+  size: 76, 125
+  orig: 163, 216
+  offset: 15, 62
+  index: -1
+caidai/caidai_07
+  rotate: true
+  xy: 145, 3
+  size: 77, 108
+  orig: 163, 216
+  offset: 22, 84
+  index: -1
+caidai/caidai_08
+  rotate: true
+  xy: 289, 24
+  size: 77, 91
+  orig: 163, 216
+  offset: 30, 106
+  index: -1
+caidai/caidai_09
+  rotate: true
+  xy: 382, 25
+  size: 76, 75
+  orig: 163, 216
+  offset: 40, 127
+  index: -1
+caidai/caidai_10
+  rotate: false
+  xy: 459, 55
+  size: 73, 60
+  orig: 163, 216
+  offset: 52, 146
+  index: -1
+caidai/caidai_11
+  rotate: false
+  xy: 459, 8
+  size: 67, 45
+  orig: 163, 216
+  offset: 67, 164
+  index: -1
+caidai/caidai_12
+  rotate: true
+  xy: 255, 20
+  size: 60, 32
+  orig: 163, 216
+  offset: 83, 180
+  index: -1
+caidai/caidai_13
+  rotate: true
+  xy: 544, 207
+  size: 50, 21
+  orig: 163, 216
+  offset: 102, 192
+  index: -1
+caidai/caidai_14
+  rotate: false
+  xy: 255, 6
+  size: 39, 12
+  orig: 163, 216
+  offset: 123, 201
+  index: -1
+li1
+  rotate: true
+  xy: 544, 308
+  size: 44, 33
+  orig: 47, 37
+  offset: 1, 1
+  index: -1
+li3
+  rotate: true
+  xy: 551, 121
+  size: 40, 25
+  orig: 40, 26
+  offset: 0, 0
+  index: -1
+li4
+  rotate: true
+  xy: 544, 163
+  size: 42, 30
+  orig: 42, 33
+  offset: 0, 1
+  index: -1
+li5
+  rotate: true
+  xy: 544, 259
+  size: 47, 29
+  orig: 47, 29
+  offset: 0, 0
+  index: -1
+li6
+  rotate: true
+  xy: 534, 60
+  size: 55, 34
+  orig: 67, 38
+  offset: 3, 3
+  index: -1

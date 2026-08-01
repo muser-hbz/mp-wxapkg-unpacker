@@ -1,0 +1,34 @@
+
+D_baodian.png
+size: 309,191
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/Glow
+  rotate: false
+  xy: 257, 47
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+images/dg
+  rotate: false
+  xy: 191, 33
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+images/shizixing2
+  rotate: false
+  xy: 2, 2
+  size: 187, 187
+  orig: 200, 200
+  offset: 5, 7
+  index: -1
+images/yanwu
+  rotate: false
+  xy: 191, 99
+  size: 86, 90
+  orig: 91, 94
+  offset: 2, 2
+  index: -1

@@ -1,0 +1,24 @@
+﻿{
+    "10101":  {
+                  "id":  10101,
+                  "name":  "甜蜜梦境",
+                  "icon":  "activity_icon_10101",
+                  "title":  "activity_title_common",
+                  "startTime":  "2026-06-25 00:00:00",
+                  "endTime":  "2026-07-21 23:59:59",
+                  "hiddenTime":  "2026-07-24 23:59:59",
+                  "type":  1,
+                  "themeId":  10003
+              },
+    "10102":  {
+                  "id":  10102,
+                  "name":  "胭染风华",
+                  "icon":  "activity_icon_10102",
+                  "title":  "activity_title_common",
+                  "startTime":  "2026-07-31 00:00:00",
+                  "endTime":  "2026-08-26 23:59:59",
+                  "hiddenTime":  "2026-08-30 23:59:59",
+                  "type":  1,
+                  "themeId":  10004
+              }
+}

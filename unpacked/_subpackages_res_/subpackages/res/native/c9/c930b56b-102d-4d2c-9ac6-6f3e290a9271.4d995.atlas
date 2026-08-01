@@ -1,0 +1,20 @@
+
+set_icon_2.png
+size: 303,249
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+apple
+  rotate: true
+  xy: 2, 2
+  size: 245, 281
+  orig: 257, 282
+  offset: 0, 1
+  index: -1
+yinying2
+  rotate: true
+  xy: 285, 52
+  size: 195, 16
+  orig: 195, 16
+  offset: 0, 0
+  index: -1

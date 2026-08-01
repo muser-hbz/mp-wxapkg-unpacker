@@ -1,0 +1,46 @@
+﻿{
+    "levelDiffcultyAB":  {
+                             "id":  "levelDiffcultyAB",
+                             "key":  "A"
+                         },
+    "unlockInviteFlowerAB":  {
+                                 "id":  "unlockInviteFlowerAB",
+                                 "key":  "B"
+                             },
+    "reviveCountAB":  {
+                          "id":  "reviveCountAB",
+                          "key":  "C"
+                      },
+    "dynamicLevelAB":  {
+                           "id":  "dynamicLevelAB",
+                           "key":  "D"
+                       },
+    "ComboSystemAB":  {
+                          "id":  "ComboSystemAB",
+                          "key":  "E"
+                      },
+    "AnimalAB":  {
+                     "id":  "AnimalAB",
+                     "key":  "F"
+                 },
+    "ExpertChallengeAB":  {
+                              "id":  "ExpertChallengeAB",
+                              "key":  "G"
+                          },
+    "densitySpreadVertical":  {
+                                  "id":  "densitySpreadVertical",
+                                  "key":  "H"
+                              },
+    "dailyTask":  {
+                      "id":  "dailyTask",
+                      "key":  "I"
+                  },
+    "ddaFlowStrategy":  {
+                            "id":  "ddaFlowStrategy",
+                            "key":  "J"
+                        },
+    "progressSpreadVertical":  {
+                                   "id":  "progressSpreadVertical",
+                                   "key":  "K"
+                               }
+}

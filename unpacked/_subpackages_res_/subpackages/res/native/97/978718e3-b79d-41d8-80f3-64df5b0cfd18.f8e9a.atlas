@@ -1,0 +1,62 @@
+
+anniu.png
+size: 338,695
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+anniu
+  rotate: false
+  xy: 2, 123
+  size: 281, 92
+  orig: 281, 92
+  offset: 0, 0
+  index: -1
+lajiao
+  rotate: true
+  xy: 254, 21
+  size: 100, 72
+  orig: 100, 72
+  offset: 0, 0
+  index: -1
+lizi
+  rotate: true
+  xy: 138, 11
+  size: 110, 114
+  orig: 152, 152
+  offset: 19, 17
+  index: -1
+ou
+  rotate: true
+  xy: 2, 2
+  size: 119, 134
+  orig: 119, 134
+  offset: 0, 0
+  index: -1
+sanguang
+  rotate: false
+  xy: 2, 421
+  size: 312, 124
+  orig: 312, 124
+  offset: 0, 0
+  index: -1
+sanguang2
+  rotate: false
+  xy: 2, 547
+  size: 334, 146
+  orig: 338, 150
+  offset: 2, 2
+  index: -1
+wk
+  rotate: false
+  xy: 2, 313
+  size: 294, 106
+  orig: 298, 110
+  offset: 2, 2
+  index: -1
+zk
+  rotate: false
+  xy: 2, 217
+  size: 283, 94
+  orig: 285, 96
+  offset: 1, 1
+  index: -1

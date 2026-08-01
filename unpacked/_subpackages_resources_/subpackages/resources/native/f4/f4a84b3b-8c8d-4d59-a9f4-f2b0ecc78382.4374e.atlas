@@ -1,0 +1,27 @@
+
+paopao.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fish_1_1
+  rotate: false
+  xy: 2, 192
+  size: 230, 150
+  orig: 230, 150
+  offset: 0, 0
+  index: -1
+fish_2_2
+  rotate: false
+  xy: 2, 2
+  size: 217, 188
+  orig: 220, 188
+  offset: 0, 0
+  index: -1
+paopao
+  rotate: true
+  xy: 2, 344
+  size: 147, 152
+  orig: 269, 232
+  offset: 59, 40
+  index: -1

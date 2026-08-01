@@ -1,0 +1,27 @@
+
+game.png
+size: 238,121
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+game
+  rotate: false
+  xy: 114, 36
+  size: 91, 83
+  orig: 91, 83
+  offset: 0, 0
+  index: -1
+gdwf
+  rotate: false
+  xy: 114, 2
+  size: 122, 32
+  orig: 124, 34
+  offset: 1, 1
+  index: -1
+zjm_bf_0002
+  rotate: false
+  xy: 2, 9
+  size: 110, 110
+  orig: 112, 112
+  offset: 1, 1
+  index: -1

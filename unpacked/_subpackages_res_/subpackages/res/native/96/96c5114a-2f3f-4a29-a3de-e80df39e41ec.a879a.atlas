@@ -1,0 +1,62 @@
+
+bing_kuai.png
+size: 173,100
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bing
+  rotate: true
+  xy: 150, 2
+  size: 25, 19
+  orig: 27, 21
+  offset: 1, 1
+  index: -1
+bing_2
+  rotate: false
+  xy: 145, 52
+  size: 26, 21
+  orig: 28, 23
+  offset: 1, 1
+  index: -1
+bing_3
+  rotate: true
+  xy: 145, 29
+  size: 21, 24
+  orig: 25, 26
+  offset: 2, 1
+  index: -1
+lanb_1
+  rotate: false
+  xy: 90, 6
+  size: 35, 38
+  orig: 37, 40
+  offset: 1, 1
+  index: -1
+lanb_2
+  rotate: true
+  xy: 145, 75
+  size: 23, 24
+  orig: 25, 26
+  offset: 1, 1
+  index: -1
+lanb_3
+  rotate: false
+  xy: 127, 4
+  size: 21, 23
+  orig: 23, 25
+  offset: 1, 1
+  index: -1
+wu
+  rotate: false
+  xy: 2, 10
+  size: 86, 88
+  orig: 91, 94
+  offset: 2, 3
+  index: -1
+xuehua
+  rotate: true
+  xy: 90, 46
+  size: 52, 53
+  orig: 52, 53
+  offset: 0, 0
+  index: -1

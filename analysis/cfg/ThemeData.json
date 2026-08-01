@@ -1,0 +1,123 @@
+﻿{
+    "Hotpop":  {
+                   "id":  "Hotpop",
+                   "name":  "火锅",
+                   "road":  0,
+                   "spine":  "huoguo",
+                   "itemName":  "食材",
+                   "condition":  0,
+                   "secret":  [
+                                  1101,
+                                  1102,
+                                  1103
+                              ]
+               },
+    "Fruit":  {
+                  "id":  "Fruit",
+                  "name":  "水果",
+                  "road":  1,
+                  "spine":  "heidong",
+                  "itemName":  "水果",
+                  "condition":  0,
+                  "secret":  [
+                                 2101,
+                                 2102,
+                                 2103
+                             ]
+              },
+    "Store":  {
+                  "id":  "Store",
+                  "name":  "百货",
+                  "road":  0,
+                  "spine":  "lanzi",
+                  "itemName":  "货物",
+                  "condition":  0,
+                  "secret":  [
+                                 3101,
+                                 3102,
+                                 3103
+                             ]
+              },
+    "Cow":  {
+                "id":  "Cow",
+                "name":  "草地牛",
+                "road":  0,
+                "itemName":  "物品",
+                "condition":  0,
+                "secret":  [
+                               101101,
+                               101102,
+                               101103
+                           ]
+            },
+    "FruitSlice":  {
+                       "id":  "FruitSlice",
+                       "name":  "水果切面",
+                       "road":  0,
+                       "itemName":  "水果",
+                       "condition":  0,
+                       "secret":  [
+
+                                  ]
+                   },
+    "Flower":  {
+                   "id":  "Flower",
+                   "name":  "花卉",
+                   "road":  0,
+                   "itemName":  "花儿",
+                   "condition":  0,
+                   "secret":  [
+                                  10001101,
+                                  10001102,
+                                  10001103
+                              ]
+               },
+    "Barbecue":  {
+                     "id":  "Barbecue",
+                     "name":  "烧烤",
+                     "road":  0,
+                     "itemName":  "烧烤",
+                     "condition":  0,
+                     "secret":  [
+                                    10002101,
+                                    10002102,
+                                    10002103
+                                ]
+                 },
+    "Animals":  {
+                    "id":  "Animals",
+                    "name":  "动物",
+                    "road":  0,
+                    "itemName":  "动物",
+                    "condition":  4,
+                    "secret":  [
+                                   4101,
+                                   4102,
+                                   4103
+                               ]
+                },
+    "Candy":  {
+                  "id":  "Candy",
+                  "name":  "糖果",
+                  "road":  0,
+                  "itemName":  "糖果",
+                  "condition":  27,
+                  "secret":  [
+                                 10003101,
+                                 10003102,
+                                 10003103
+                             ]
+              },
+    "Cosmetics":  {
+                      "id":  "Cosmetics",
+                      "name":  "化妆品",
+                      "road":  0,
+                      "itemName":  "化妆品",
+                      "condition":  27,
+                      "secret":  [
+                                     10004101,
+                                     10004102,
+                                     10004103
+                                 ]
+                  }
+}

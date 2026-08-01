@@ -1,0 +1,42 @@
+﻿{
+    "1":  {
+              "id":  1,
+              "define":  "Click1",
+              "group":  1,
+              "flag":  1,
+              "actionID":  100001,
+              "clickDelay":  0.1,
+              "content":  "将生成的方块移动到格子中，放满一行或者一列即可消除方块。",
+              "mask":  1,
+              "bgColor":  "#00000080",
+              "viewsID":  1001,
+              "dialogPos":  [
+                                0,
+                                0,
+                                -564
+                            ],
+              "maskSize":  [
+                               222,
+                               150
+                           ],
+              "maskPos":  [
+                              5,
+                              0,
+                              -695
+                          ],
+              "touchSize":  [
+                                172,
+                                132
+                            ],
+              "touchPos":  [
+                               5,
+                               0,
+                               -695
+                           ],
+              "fingerPos":  [
+                                5,
+                                0,
+                                -695
+                            ]
+          }
+}

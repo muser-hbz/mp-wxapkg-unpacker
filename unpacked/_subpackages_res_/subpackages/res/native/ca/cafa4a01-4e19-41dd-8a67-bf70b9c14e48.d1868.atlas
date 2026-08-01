@@ -1,0 +1,125 @@
+
+Kaiche.png
+size: 964,943
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+001
+  rotate: false
+  xy: 285, 230
+  size: 293, 185
+  orig: 304, 185
+  offset: 5, 0
+  index: -1
+002
+  rotate: false
+  xy: 583, 692
+  size: 379, 249
+  orig: 379, 249
+  offset: 0, 0
+  index: -1
+003
+  rotate: false
+  xy: 251, 2
+  size: 307, 226
+  orig: 307, 232
+  offset: 0, 0
+  index: -1
+003_1
+  rotate: false
+  xy: 816, 39
+  size: 80, 90
+  orig: 87, 90
+  offset: 7, 0
+  index: -1
+004
+  rotate: false
+  xy: 285, 417
+  size: 295, 239
+  orig: 312, 244
+  offset: 6, 4
+  index: -1
+005
+  rotate: true
+  xy: 2, 6
+  size: 309, 247
+  orig: 310, 252
+  offset: 0, 0
+  index: -1
+005_1
+  rotate: false
+  xy: 848, 131
+  size: 104, 104
+  orig: 105, 105
+  offset: 1, 1
+  index: -1
+01
+  rotate: false
+  xy: 704, 31
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+0102
+  rotate: false
+  xy: 848, 237
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+J01
+  rotate: false
+  xy: 560, 52
+  size: 142, 89
+  orig: 152, 90
+  offset: 1, 0
+  index: -1
+J02
+  rotate: false
+  xy: 2, 317
+  size: 281, 339
+  orig: 282, 347
+  offset: 1, 1
+  index: -1
+J03
+  rotate: true
+  xy: 583, 517
+  size: 173, 371
+  orig: 173, 385
+  offset: 0, 14
+  index: -1
+J04
+  rotate: true
+  xy: 580, 199
+  size: 148, 266
+  orig: 159, 268
+  offset: 11, 2
+  index: -1
+J06
+  rotate: true
+  xy: 582, 349
+  size: 166, 325
+  orig: 179, 342
+  offset: 13, 7
+  index: -1
+kezi
+  rotate: false
+  xy: 2, 658
+  size: 579, 283
+  orig: 599, 334
+  offset: 20, 23
+  index: -1
+yan2
+  rotate: true
+  xy: 898, 64
+  size: 65, 62
+  orig: 65, 62
+  offset: 0, 0
+  index: -1
+yzi
+  rotate: false
+  xy: 560, 143
+  size: 233, 54
+  orig: 233, 54
+  offset: 0, 0
+  index: -1
