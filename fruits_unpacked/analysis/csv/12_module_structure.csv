@@ -1,0 +1,37 @@
+﻿序号,模块名,大小(字符),分类,说明
+0,@babel/runtime/helpers/Arrayincludes.js,481,Babel运行时,Array.includes polyfill
+1,@babel/runtime/helpers/Objectentries.js,234,Babel运行时,Object.entries polyfill
+2,@babel/runtime/helpers/arrayLikeToArray.js,261,Babel运行时,类数组转数组
+3,@babel/runtime/helpers/createForOfIteratorHelper.js,920,Babel运行时,for...of 辅助
+4,@babel/runtime/helpers/defineProperty.js,331,Babel运行时,Object.defineProperty 辅助
+5,@babel/runtime/helpers/regeneratorRuntime.js,6880,Babel运行时,async/await 运行时
+6,@babel/runtime/helpers/toPrimitive.js,444,Babel运行时,转原始值
+7,@babel/runtime/helpers/toPropertyKey.js,299,Babel运行时,转属性键
+8,@babel/runtime/helpers/typeof.js,382,Babel运行时,typeof 辅助
+9,@babel/runtime/helpers/unsupportedIterableToArray.js,552,Babel运行时,不可迭代转数组
+10,application.js,1710,应用入口,应用初始化
+11,assets/internal/index.js,44930,资源包,内部资源索引
+12,assets/main/index.js,429,资源包,主包索引
+13,assets/start-scene/index.js,722420,★核心玩法,游戏主逻辑(含混淆)
+14,cocos-js/affine-transform.js,1865,引擎,仿射变换
+15,cocos-js/animation-component-BnqP5StL.js,69482,引擎,动画组件
+16,cocos-js/animation.js,174694,引擎,动画系统
+17,cocos-js/box2d.release.asm-D6DRr2VU.js,371980,引擎,Box2D物理(WASM asm)
+18,cocos-js/box2d.release.wasm-BXZod5eD.js,234,引擎,Box2D WASM加载
+19,cocos-js/box2d.release.wasm-CHf_yir5.js,31529,引擎,Box2D WASM辅助
+20,cocos-js/cc.js,2416,引擎,CC命名空间
+21,cocos-js/collision-matrix-C-tmFF1b.js,2108,引擎,碰撞矩阵
+22,cocos-js/custom-pipeline.js,870,引擎,自定义渲染管线
+23,cocos-js/index-Xk0wdnHY.js,196869,引擎,引擎主模块
+24,cocos-js/physics-2d-box2d-wasm.js,36548,引擎,2D物理Box2D WASM
+25,cocos-js/physics-2d-framework-CVNkMl3f.js,41390,引擎,2D物理框架
+26,cocos-js/physics-2d-framework.js,1264,引擎,2D物理框架入口
+27,engine-adapter.js,20397,适配层,引擎适配
+28,first-screen.js,6195,首屏,首屏加载
+29,src/assets/md5/crypto-md5.js,5461,工具,MD5加密
+30,src/chunks/bundle.js,4780,系统,打包块
+31,src/import-map.js,3536,系统,导入映射
+32,src/polyfills.bundle.js,8593,系统,Polyfill
+33,src/system.bundle.js,8672,系统,SystemJS
+34,web-adapter.js,88382,适配层,Web适配
+35,game.js,1643,入口,启动入口

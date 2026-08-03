@@ -1,0 +1,11 @@
+﻿功能,URL/标识,方法,说明
+登录,https://api.devourad.com/Wechat/gameLogin,POST,微信小游戏登录
+抖音转化,https://api.devourad.com/Wechat/dyConversion,POST,抖音广告转化上报
+绑定游戏,https://api.devourad.com/Gameinfo/getBindGame,GET,获取绑定游戏信息
+获取存档,https://api.devourad.com/WechatGameFile/get_data,GET/POST,拉取玩家存档
+保存存档,https://api.devourad.com/WechatGameFile/set_data,POST,上传玩家存档
+抖音登录,https://api.devourad.com/douyin/gameLoginNoClickId,POST,抖音登录(无ClickId)
+QQ上报,https://api.datanexus.qq.com/data-nexus-trace/log,POST,QQ数据上报
+分享图片CDN,https://cdn.devourad.com/dy/ShuiGuoShares/1.jpg,GET,分享图片资源
+云开发环境,cloudbase-4gnwt8be5f2000b2,-,微信云开发环境ID
+SDK版本,@dn-sdk/minigame v1.5.8,-,数据上报SDK
