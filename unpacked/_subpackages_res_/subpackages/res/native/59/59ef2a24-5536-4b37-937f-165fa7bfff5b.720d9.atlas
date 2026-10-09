@@ -1,0 +1,20 @@
+
+TJsaoguang.png
+size: 107,47
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/XX2
+  rotate: true
+  xy: 61, 2
+  size: 43, 44
+  orig: 43, 46
+  offset: 0, 1
+  index: -1
+image/guang1
+  rotate: false
+  xy: 2, 3
+  size: 57, 42
+  orig: 61, 42
+  offset: 0, 0
+  index: -1

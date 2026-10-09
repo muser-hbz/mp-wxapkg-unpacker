@@ -1,0 +1,153 @@
+
+zhadan.png
+size: 636,639
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Glow
+  rotate: false
+  xy: 431, 134
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Glow2
+  rotate: false
+  xy: 483, 136
+  size: 48, 48
+  orig: 50, 50
+  offset: 1, 1
+  index: -1
+baoxin
+  rotate: false
+  xy: 547, 7
+  size: 58, 71
+  orig: 69, 73
+  offset: 2, 0
+  index: -1
+baozha/baozha_01
+  rotate: true
+  xy: 238, 4
+  size: 121, 141
+  orig: 156, 180
+  offset: 16, 26
+  index: -1
+baozha/baozha_02
+  rotate: false
+  xy: 431, 186
+  size: 143, 154
+  orig: 156, 180
+  offset: 9, 14
+  index: -1
+baozha/baozha_03
+  rotate: false
+  xy: 430, 342
+  size: 144, 154
+  orig: 156, 180
+  offset: 8, 14
+  index: -1
+baozha/baozha_04
+  rotate: false
+  xy: 286, 134
+  size: 143, 164
+  orig: 156, 180
+  offset: 8, 11
+  index: -1
+baozha/baozha_05
+  rotate: false
+  xy: 146, 300
+  size: 142, 167
+  orig: 156, 180
+  offset: 7, 9
+  index: -1
+baozha/baozha_06
+  rotate: false
+  xy: 145, 469
+  size: 142, 168
+  orig: 156, 180
+  offset: 7, 8
+  index: -1
+baozha/baozha_07
+  rotate: false
+  xy: 2, 123
+  size: 142, 168
+  orig: 156, 180
+  offset: 8, 8
+  index: -1
+baozha/baozha_08
+  rotate: false
+  xy: 2, 293
+  size: 142, 170
+  orig: 156, 180
+  offset: 8, 7
+  index: -1
+baozha/baozha_09
+  rotate: false
+  xy: 290, 327
+  size: 138, 169
+  orig: 156, 180
+  offset: 8, 8
+  index: -1
+baozha/baozha_10
+  rotate: true
+  xy: 289, 498
+  size: 139, 170
+  orig: 156, 180
+  offset: 7, 7
+  index: -1
+baozha/baozha_11
+  rotate: false
+  xy: 146, 127
+  size: 138, 171
+  orig: 156, 180
+  offset: 7, 6
+  index: -1
+baozha/baozha_12
+  rotate: false
+  xy: 2, 465
+  size: 141, 172
+  orig: 156, 180
+  offset: 6, 6
+  index: -1
+baozha/baozha_13
+  rotate: true
+  xy: 461, 510
+  size: 127, 164
+  orig: 156, 180
+  offset: 19, 7
+  index: -1
+baozha/baozha_14
+  rotate: true
+  xy: 381, 4
+  size: 128, 164
+  orig: 156, 180
+  offset: 18, 7
+  index: -1
+baozha/baozha_15
+  rotate: false
+  xy: 120, 4
+  size: 116, 117
+  orig: 156, 180
+  offset: 21, 45
+  index: -1
+baozha/baozha_16
+  rotate: false
+  xy: 2, 2
+  size: 116, 119
+  orig: 156, 180
+  offset: 21, 44
+  index: -1
+lizi
+  rotate: true
+  xy: 547, 80
+  size: 104, 54
+  orig: 106, 56
+  offset: 0, 1
+  index: -1
+zhadan
+  rotate: false
+  xy: 576, 442
+  size: 58, 66
+  orig: 58, 66
+  offset: 0, 0
+  index: -1

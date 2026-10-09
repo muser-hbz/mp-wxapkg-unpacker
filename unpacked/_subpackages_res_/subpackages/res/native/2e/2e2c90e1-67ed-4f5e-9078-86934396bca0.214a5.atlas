@@ -1,0 +1,27 @@
+
+food.png
+size: 629,424
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gy
+  rotate: false
+  xy: 424, 71
+  size: 145, 146
+  orig: 154, 152
+  offset: 4, 6
+  index: -1
+theme_bf_3
+  rotate: false
+  xy: 2, 2
+  size: 420, 420
+  orig: 441, 440
+  offset: 11, 9
+  index: -1
+ys2
+  rotate: false
+  xy: 424, 219
+  size: 203, 203
+  orig: 203, 203
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,76 @@
+
+piaochong.png
+size: 119,168
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bai1
+  rotate: false
+  xy: 70, 68
+  size: 47, 44
+  orig: 47, 44
+  offset: 0, 0
+  index: -1
+cb1
+  rotate: true
+  xy: 2, 9
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+cb2
+  rotate: true
+  xy: 56, 2
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+cb3
+  rotate: false
+  xy: 70, 114
+  size: 46, 52
+  orig: 46, 52
+  offset: 0, 0
+  index: -1
+cb4
+  rotate: true
+  xy: 58, 28
+  size: 38, 51
+  orig: 38, 52
+  offset: 0, 0
+  index: -1
+cb5
+  rotate: false
+  xy: 43, 19
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: -1
+cb6
+  rotate: false
+  xy: 43, 4
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+cb7
+  rotate: false
+  xy: 97, 9
+  size: 18, 17
+  orig: 19, 17
+  offset: 1, 0
+  index: -1
+pc1
+  rotate: false
+  xy: 2, 35
+  size: 54, 69
+  orig: 54, 69
+  offset: 0, 0
+  index: -1
+pc2
+  rotate: true
+  xy: 2, 106
+  size: 60, 66
+  orig: 60, 73
+  offset: 0, 0
+  index: -1

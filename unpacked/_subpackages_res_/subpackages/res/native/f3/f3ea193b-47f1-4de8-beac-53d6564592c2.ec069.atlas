@@ -1,0 +1,48 @@
+
+set_icon_1.png
+size: 456,231
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuizi
+  rotate: false
+  xy: 283, 33
+  size: 171, 196
+  orig: 173, 198
+  offset: 1, 1
+  index: -1
+sk2
+  rotate: true
+  xy: 349, 23
+  size: 8, 19
+  orig: 10, 21
+  offset: 1, 1
+  index: -1
+sk3
+  rotate: false
+  xy: 370, 23
+  size: 12, 8
+  orig: 14, 10
+  offset: 1, 1
+  index: -1
+suikuai
+  rotate: true
+  xy: 320, 13
+  size: 18, 27
+  orig: 18, 27
+  offset: 0, 0
+  index: -1
+suikuai2
+  rotate: true
+  xy: 283, 2
+  size: 29, 35
+  orig: 29, 36
+  offset: 0, 0
+  index: -1
+xiangzi
+  rotate: false
+  xy: 2, 6
+  size: 279, 223
+  orig: 295, 231
+  offset: 12, 7
+  index: -1

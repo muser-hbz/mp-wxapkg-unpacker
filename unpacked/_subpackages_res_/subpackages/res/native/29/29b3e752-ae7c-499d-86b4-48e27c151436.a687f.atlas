@@ -1,0 +1,167 @@
+
+huoguo.png
+size: 962,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PNG1
+  rotate: true
+  xy: 687, 331
+  size: 190, 187
+  orig: 194, 199
+  offset: 2, 6
+  index: -1
+PNG2
+  rotate: false
+  xy: 570, 157
+  size: 178, 162
+  orig: 198, 176
+  offset: 10, 7
+  index: -1
+PNG3
+  rotate: false
+  xy: 579, 4
+  size: 154, 151
+  orig: 176, 179
+  offset: 11, 14
+  index: -1
+doufu
+  rotate: false
+  xy: 324, 28
+  size: 99, 123
+  orig: 105, 131
+  offset: 0, 1
+  index: -1
+gu
+  rotate: false
+  xy: 425, 29
+  size: 152, 122
+  orig: 152, 122
+  offset: 0, 0
+  index: -1
+guo
+  rotate: false
+  xy: 2, 153
+  size: 566, 368
+  orig: 566, 368
+  offset: 0, 0
+  index: -1
+lu
+  rotate: true
+  xy: 158, 12
+  size: 139, 164
+  orig: 139, 169
+  offset: 0, 4
+  index: -1
+paopao/paopao_04
+  rotate: false
+  xy: 324, 4
+  size: 50, 22
+  orig: 135, 99
+  offset: 35, 26
+  index: -1
+paopao/paopao_06
+  rotate: false
+  xy: 883, 74
+  size: 61, 33
+  orig: 135, 99
+  offset: 29, 24
+  index: -1
+paopao/paopao_08
+  rotate: false
+  xy: 735, 112
+  size: 72, 43
+  orig: 135, 99
+  offset: 23, 20
+  index: -1
+paopao/paopao_09
+  rotate: false
+  xy: 874, 271
+  size: 82, 54
+  orig: 135, 99
+  offset: 18, 17
+  index: -1
+paopao/paopao_10
+  rotate: false
+  xy: 868, 109
+  size: 92, 68
+  orig: 135, 99
+  offset: 13, 16
+  index: -1
+paopao/paopao_11
+  rotate: true
+  xy: 735, 5
+  size: 102, 77
+  orig: 135, 99
+  offset: 7, 14
+  index: -1
+paopao/paopao_12
+  rotate: true
+  xy: 876, 408
+  size: 113, 84
+  orig: 135, 99
+  offset: 1, 11
+  index: -1
+paopao/paopao_13
+  rotate: false
+  xy: 876, 327
+  size: 84, 79
+  orig: 135, 99
+  offset: 22, 18
+  index: -1
+paopao/paopao_14
+  rotate: true
+  xy: 873, 179
+  size: 90, 79
+  orig: 135, 99
+  offset: 19, 18
+  index: -1
+paopao/paopao_15
+  rotate: true
+  xy: 814, 5
+  size: 102, 67
+  orig: 135, 99
+  offset: 15, 18
+  index: -1
+paopao/paopao_16
+  rotate: false
+  xy: 750, 171
+  size: 116, 45
+  orig: 135, 99
+  offset: 8, 24
+  index: -1
+paopao/paopao_17
+  rotate: false
+  xy: 750, 258
+  size: 121, 36
+  orig: 135, 99
+  offset: 7, 22
+  index: -1
+paopao/paopao_18
+  rotate: false
+  xy: 750, 296
+  size: 122, 33
+  orig: 135, 99
+  offset: 7, 21
+  index: -1
+paopao/paopao_19
+  rotate: false
+  xy: 750, 218
+  size: 118, 38
+  orig: 135, 99
+  offset: 13, 19
+  index: -1
+rou
+  rotate: true
+  xy: 570, 321
+  size: 200, 115
+  orig: 200, 115
+  offset: 0, 0
+  index: -1
+xia
+  rotate: false
+  xy: 2, 2
+  size: 154, 149
+  orig: 156, 151
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,48 @@
+
+tx_lizi.png
+size: 496,96
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dg
+  rotate: false
+  xy: 430, 30
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+huanxing
+  rotate: false
+  xy: 346, 12
+  size: 82, 82
+  orig: 82, 82
+  offset: 0, 0
+  index: -1
+xing01
+  rotate: false
+  xy: 2, 2
+  size: 87, 92
+  orig: 87, 92
+  offset: 0, 0
+  index: -1
+xing02
+  rotate: false
+  xy: 91, 6
+  size: 83, 88
+  orig: 83, 88
+  offset: 0, 0
+  index: -1
+xing03
+  rotate: false
+  xy: 176, 6
+  size: 83, 88
+  orig: 83, 88
+  offset: 0, 0
+  index: -1
+xing04
+  rotate: false
+  xy: 261, 6
+  size: 83, 88
+  orig: 83, 88
+  offset: 0, 0
+  index: -1

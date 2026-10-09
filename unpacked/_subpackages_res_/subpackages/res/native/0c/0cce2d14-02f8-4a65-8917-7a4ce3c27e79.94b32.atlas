@@ -1,0 +1,41 @@
+
+Jiesuo_ef.png
+size: 419,127
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lizi
+  rotate: false
+  xy: 366, 35
+  size: 28, 28
+  orig: 30, 30
+  offset: 1, 1
+  index: -1
+shizixing2
+  rotate: false
+  xy: 252, 13
+  size: 112, 112
+  orig: 120, 120
+  offset: 3, 4
+  index: -1
+yaoshi02
+  rotate: false
+  xy: 366, 65
+  size: 51, 60
+  orig: 56, 62
+  offset: 2, 1
+  index: -1
+ys2
+  rotate: false
+  xy: 2, 2
+  size: 123, 123
+  orig: 123, 123
+  offset: 0, 0
+  index: -1
+ys3
+  rotate: false
+  xy: 127, 2
+  size: 123, 123
+  orig: 123, 123
+  offset: 0, 0
+  index: -1

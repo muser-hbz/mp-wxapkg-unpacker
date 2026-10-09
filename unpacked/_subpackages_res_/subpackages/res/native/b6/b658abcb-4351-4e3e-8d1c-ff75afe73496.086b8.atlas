@@ -1,0 +1,76 @@
+
+yqyl.png
+size: 406,212
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+7
+  rotate: true
+  xy: 200, 55
+  size: 155, 148
+  orig: 155, 148
+  offset: 0, 0
+  index: -1
+biyan
+  rotate: false
+  xy: 200, 2
+  size: 84, 51
+  orig: 84, 51
+  offset: 0, 0
+  index: -1
+mo_1
+  rotate: true
+  xy: 350, 139
+  size: 71, 54
+  orig: 71, 54
+  offset: 0, 0
+  index: -1
+mo_2
+  rotate: false
+  xy: 380, 20
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+mo_3
+  rotate: false
+  xy: 380, 49
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1
+mo_4
+  rotate: true
+  xy: 350, 56
+  size: 20, 27
+  orig: 20, 27
+  offset: 0, 0
+  index: -1
+mo_5
+  rotate: true
+  xy: 352, 18
+  size: 36, 26
+  orig: 36, 26
+  offset: 0, 0
+  index: -1
+mo_6
+  rotate: false
+  xy: 286, 8
+  size: 64, 45
+  orig: 64, 45
+  offset: 0, 0
+  index: -1
+mo_8
+  rotate: true
+  xy: 350, 78
+  size: 59, 47
+  orig: 59, 47
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 6
+  size: 196, 204
+  orig: 196, 204
+  offset: 0, 0
+  index: -1

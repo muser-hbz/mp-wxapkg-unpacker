@@ -1,0 +1,20 @@
+
+csd.png
+size: 524,90
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bbg
+  rotate: false
+  xy: 2, 10
+  size: 520, 78
+  orig: 522, 80
+  offset: 1, 1
+  index: -1
+x1
+  rotate: true
+  xy: 2, 2
+  size: 6, 23
+  orig: 8, 25
+  offset: 1, 1
+  index: -1
