@@ -1,0 +1,181 @@
+
+skeleton.png
+size: 507,1027
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1/上嘴
+  rotate: true
+  xy: 446, 156
+  size: 78, 57
+  orig: 78, 57
+  offset: 0, 0
+  index: -1
+33/上嘴
+  rotate: true
+  xy: 446, 156
+  size: 78, 57
+  orig: 78, 57
+  offset: 0, 0
+  index: -1
+1/下嘴
+  rotate: false
+  xy: 446, 89
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+33/下嘴
+  rotate: false
+  xy: 446, 89
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+1/中毛
+  rotate: false
+  xy: 475, 987
+  size: 27, 38
+  orig: 27, 38
+  offset: 0, 0
+  index: -1
+1/右毛
+  rotate: false
+  xy: 475, 870
+  size: 16, 37
+  orig: 16, 37
+  offset: 0, 0
+  index: -1
+1/左毛
+  rotate: false
+  xy: 475, 962
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+1/眼框
+  rotate: false
+  xy: 446, 37
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+33/眼框
+  rotate: false
+  xy: 446, 37
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+1/眼瞳
+  rotate: false
+  xy: 493, 896
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+33/眼瞳
+  rotate: false
+  xy: 493, 896
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+1/翅膀
+  rotate: true
+  xy: 107, 265
+  size: 107, 89
+  orig: 107, 89
+  offset: 0, 0
+  index: -1
+1/翅膀2
+  rotate: true
+  xy: 2, 261
+  size: 111, 103
+  orig: 111, 103
+  offset: 0, 0
+  index: -1
+33/翅膀2
+  rotate: true
+  xy: 2, 261
+  size: 111, 103
+  orig: 111, 103
+  offset: 0, 0
+  index: -1
+1/脚
+  rotate: false
+  xy: 198, 296
+  size: 67, 104
+  orig: 67, 104
+  offset: 0, 0
+  index: -1
+33/脚
+  rotate: false
+  xy: 198, 296
+  size: 67, 104
+  orig: 67, 104
+  offset: 0, 0
+  index: -1
+1/腮红
+  rotate: false
+  xy: 475, 935
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+1/身子
+  rotate: true
+  xy: 2, 2
+  size: 232, 442
+  orig: 232, 442
+  offset: 0, 0
+  index: -1
+1/鸭头
+  rotate: true
+  xy: 115, 402
+  size: 96, 95
+  orig: 96, 95
+  offset: 0, 0
+  index: -1
+33/翅膀
+  rotate: true
+  xy: 2, 374
+  size: 124, 111
+  orig: 124, 111
+  offset: 0, 0
+  index: -1
+33/腮红
+  rotate: false
+  xy: 475, 909
+  size: 25, 24
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+33/身子
+  rotate: false
+  xy: 2, 500
+  size: 275, 525
+  orig: 275, 525
+  offset: 0, 0
+  index: -1
+33/鸭头
+  rotate: false
+  xy: 279, 236
+  size: 197, 286
+  orig: 197, 286
+  offset: 0, 0
+  index: -1
+弹窗
+  rotate: true
+  xy: 279, 524
+  size: 501, 194
+  orig: 501, 194
+  offset: 0, 0
+  index: -1
+眼泪
+  rotate: true
+  xy: 446, 2
+  size: 33, 53
+  orig: 33, 53
+  offset: 0, 0
+  index: -1

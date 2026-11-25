@@ -1,0 +1,27 @@
+
+xw.png
+size: 647,431
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+头
+  rotate: true
+  xy: 455, 224
+  size: 205, 190
+  orig: 205, 190
+  offset: 0, 0
+  index: -1
+蛇
+  rotate: false
+  xy: 455, 50
+  size: 169, 172
+  orig: 169, 172
+  offset: 0, 0
+  index: -1
+身子
+  rotate: false
+  xy: 2, 2
+  size: 451, 427
+  orig: 451, 430
+  offset: 0, 3
+  index: -1

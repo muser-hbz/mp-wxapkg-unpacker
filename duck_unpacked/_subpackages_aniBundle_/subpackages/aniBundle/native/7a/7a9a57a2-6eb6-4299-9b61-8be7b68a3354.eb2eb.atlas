@@ -1,0 +1,34 @@
+
+baihu.png
+size: 739,405
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+前掌
+  rotate: true
+  xy: 497, 267
+  size: 136, 240
+  orig: 136, 240
+  offset: 0, 0
+  index: -1
+右掌
+  rotate: false
+  xy: 497, 24
+  size: 103, 241
+  orig: 103, 241
+  offset: 0, 0
+  index: -1
+右腿
+  rotate: true
+  xy: 602, 173
+  size: 92, 125
+  orig: 92, 125
+  offset: 0, 0
+  index: -1
+身子
+  rotate: false
+  xy: 2, 2
+  size: 493, 401
+  orig: 493, 401
+  offset: 0, 0
+  index: -1

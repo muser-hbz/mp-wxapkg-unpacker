@@ -1,0 +1,27 @@
+
+skeleton.png
+size: 176,261
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+入口奖励
+  rotate: true
+  xy: 2, 2
+  size: 148, 155
+  orig: 148, 155
+  offset: 0, 0
+  index: -1
+收藏有利
+  rotate: false
+  xy: 2, 152
+  size: 172, 53
+  orig: 172, 53
+  offset: 0, 0
+  index: -1
+每日
+  rotate: false
+  xy: 2, 207
+  size: 172, 52
+  orig: 172, 52
+  offset: 0, 0
+  index: -1

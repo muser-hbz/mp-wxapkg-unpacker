@@ -1,0 +1,34 @@
+
+wjk.png
+size: 323,178
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+底
+  rotate: false
+  xy: 2, 2
+  size: 174, 174
+  orig: 174, 174
+  offset: 0, 0
+  index: -1
+挖金矿
+  rotate: true
+  xy: 278, 59
+  size: 117, 43
+  orig: 117, 43
+  offset: 0, 0
+  index: -1
+稿子
+  rotate: false
+  xy: 178, 68
+  size: 98, 108
+  orig: 98, 108
+  offset: 0, 0
+  index: -1
+金子
+  rotate: false
+  xy: 178, 10
+  size: 58, 56
+  orig: 58, 56
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+baize.png
+size: 634,459
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a8/前腿
+  rotate: false
+  xy: 517, 63
+  size: 93, 198
+  orig: 93, 198
+  offset: 0, 0
+  index: -1
+a8/后腿
+  rotate: false
+  xy: 517, 263
+  size: 115, 194
+  orig: 115, 194
+  offset: 0, 0
+  index: -1
+a8/身体
+  rotate: true
+  xy: 2, 2
+  size: 455, 513
+  orig: 456, 513
+  offset: 1, 0
+  index: -1

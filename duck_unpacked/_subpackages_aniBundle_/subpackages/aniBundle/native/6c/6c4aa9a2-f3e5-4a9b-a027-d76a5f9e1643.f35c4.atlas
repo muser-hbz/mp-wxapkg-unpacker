@@ -1,0 +1,27 @@
+
+yxz.png
+size: 150,176
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上
+  rotate: false
+  xy: 73, 13
+  size: 75, 100
+  orig: 75, 100
+  offset: 0, 0
+  index: -1
+下
+  rotate: true
+  xy: 2, 2
+  size: 111, 69
+  orig: 111, 70
+  offset: 0, 0
+  index: -1
+游戏站
+  rotate: false
+  xy: 2, 115
+  size: 137, 59
+  orig: 138, 61
+  offset: 1, 1
+  index: -1

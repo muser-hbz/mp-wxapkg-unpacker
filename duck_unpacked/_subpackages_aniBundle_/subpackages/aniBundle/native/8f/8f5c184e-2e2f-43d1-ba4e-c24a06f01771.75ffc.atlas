@@ -1,0 +1,48 @@
+
+goose.png
+size: 993,322
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+佑
+  rotate: true
+  xy: 495, 114
+  size: 206, 348
+  orig: 206, 348
+  offset: 0, 0
+  index: -1
+前
+  rotate: true
+  xy: 495, 15
+  size: 97, 141
+  orig: 97, 141
+  offset: 0, 0
+  index: -1
+后
+  rotate: true
+  xy: 638, 27
+  size: 85, 120
+  orig: 85, 120
+  offset: 0, 0
+  index: -1
+左
+  rotate: false
+  xy: 845, 2
+  size: 146, 318
+  orig: 146, 318
+  offset: 0, 0
+  index: -1
+眼
+  rotate: false
+  xy: 760, 75
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+身体
+  rotate: true
+  xy: 2, 11
+  size: 309, 491
+  orig: 309, 491
+  offset: 0, 0
+  index: -1

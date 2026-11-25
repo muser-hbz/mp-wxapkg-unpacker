@@ -1,0 +1,27 @@
+
+touch.png
+size: 207,162
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qietu/2
+  rotate: false
+  xy: 119, 76
+  size: 86, 84
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+qietu/3
+  rotate: true
+  xy: 2, 43
+  size: 117, 115
+  orig: 130, 130
+  offset: 6, 7
+  index: -1
+qietu/shouzhi
+  rotate: false
+  xy: 119, 2
+  size: 74, 72
+  orig: 74, 72
+  offset: 0, 0
+  index: -1

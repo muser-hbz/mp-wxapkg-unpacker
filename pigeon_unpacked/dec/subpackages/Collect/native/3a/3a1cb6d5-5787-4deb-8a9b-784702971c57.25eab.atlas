@@ -1,0 +1,69 @@
+
+skeletons.png
+size: 1271,347
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: false
+  xy: 1012, 2
+  size: 51, 21
+  orig: 52, 22
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: true
+  xy: 1012, 83
+  size: 262, 155
+  orig: 262, 155
+  offset: 0, 0
+  index: -1
+houjiao
+  rotate: false
+  xy: 1169, 157
+  size: 86, 88
+  orig: 86, 88
+  offset: 0, 0
+  index: -1
+img_shadow
+  rotate: false
+  xy: 1012, 25
+  size: 254, 56
+  orig: 256, 60
+  offset: 1, 2
+  index: -1
+qianjiao
+  rotate: false
+  xy: 1169, 247
+  size: 96, 98
+  orig: 96, 98
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 3
+  size: 342, 503
+  orig: 342, 503
+  offset: 0, 0
+  index: -1
+shenti2
+  rotate: true
+  xy: 507, 3
+  size: 342, 503
+  orig: 342, 503
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: true
+  xy: 1169, 102
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1
+yanjing1
+  rotate: true
+  xy: 1220, 102
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1

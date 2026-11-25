@@ -1,0 +1,41 @@
+
+caiping.png
+size: 297,181
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+底
+  rotate: false
+  xy: 2, 5
+  size: 174, 174
+  orig: 174, 174
+  offset: 0, 0
+  index: -1
+猜瓶子
+  rotate: false
+  xy: 178, 136
+  size: 117, 43
+  orig: 117, 43
+  offset: 0, 0
+  index: -1
+白
+  rotate: true
+  xy: 178, 2
+  size: 42, 107
+  orig: 42, 107
+  offset: 0, 0
+  index: -1
+红
+  rotate: true
+  xy: 178, 46
+  size: 43, 106
+  orig: 43, 106
+  offset: 0, 0
+  index: -1
+绿
+  rotate: true
+  xy: 178, 91
+  size: 43, 107
+  orig: 43, 107
+  offset: 0, 0
+  index: -1

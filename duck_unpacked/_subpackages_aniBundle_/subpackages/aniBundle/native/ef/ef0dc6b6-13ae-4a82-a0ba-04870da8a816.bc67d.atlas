@@ -1,0 +1,41 @@
+
+skeleton.png
+size: 343,229
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+底
+  rotate: false
+  xy: 2, 53
+  size: 174, 174
+  orig: 174, 174
+  offset: 0, 0
+  index: -1
+柠檬鸭
+  rotate: true
+  xy: 178, 151
+  size: 76, 161
+  orig: 76, 161
+  offset: 0, 0
+  index: -1
+水果鸭
+  rotate: false
+  xy: 2, 6
+  size: 174, 45
+  orig: 174, 45
+  offset: 0, 0
+  index: -1
+火龙果鸭
+  rotate: true
+  xy: 178, 2
+  size: 71, 161
+  orig: 71, 161
+  offset: 0, 0
+  index: -1
+西瓜鸭
+  rotate: true
+  xy: 178, 75
+  size: 74, 163
+  orig: 74, 163
+  offset: 0, 0
+  index: -1

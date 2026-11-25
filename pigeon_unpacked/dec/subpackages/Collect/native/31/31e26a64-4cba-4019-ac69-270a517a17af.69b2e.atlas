@@ -1,0 +1,83 @@
+
+扑腾.png
+size: 1909,377
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: false
+  xy: 1563, 36
+  size: 51, 21
+  orig: 52, 22
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: true
+  xy: 1692, 111
+  size: 264, 157
+  orig: 264, 157
+  offset: 0, 0
+  index: -1
+fa
+  rotate: false
+  xy: 1449, 59
+  size: 241, 316
+  orig: 241, 316
+  offset: 0, 0
+  index: -1
+houjiao
+  rotate: false
+  xy: 1794, 19
+  size: 88, 90
+  orig: 88, 90
+  offset: 0, 0
+  index: -1
+img_shadow
+  rotate: true
+  xy: 1851, 121
+  size: 254, 56
+  orig: 256, 60
+  offset: 1, 2
+  index: -1
+qianjiao
+  rotate: true
+  xy: 1692, 11
+  size: 98, 100
+  orig: 98, 100
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 2
+  size: 373, 482
+  orig: 373, 482
+  offset: 0, 0
+  index: -1
+shenti2
+  rotate: true
+  xy: 970, 2
+  size: 373, 477
+  orig: 373, 477
+  offset: 0, 0
+  index: -1
+shenti3
+  rotate: true
+  xy: 486, 2
+  size: 373, 482
+  orig: 373, 482
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 1506, 6
+  size: 55, 51
+  orig: 60, 60
+  offset: 2, 4
+  index: -1
+yanjing1
+  rotate: false
+  xy: 1449, 5
+  size: 55, 52
+  orig: 60, 60
+  offset: 2, 3
+  index: -1

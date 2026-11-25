@@ -1,0 +1,13 @@
+
+ZYQ.png
+size: 531,531
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+圈
+  rotate: false
+  xy: 2, 2
+  size: 527, 527
+  orig: 527, 527
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,69 @@
+
+总.png
+size: 542,910
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: false
+  xy: 436, 382
+  size: 51, 21
+  orig: 52, 22
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: true
+  xy: 378, 646
+  size: 262, 155
+  orig: 262, 159
+  offset: 0, 2
+  index: -1
+houjiao
+  rotate: false
+  xy: 436, 456
+  size: 86, 88
+  orig: 86, 88
+  offset: 0, 0
+  index: -1
+img_shadow
+  rotate: true
+  xy: 378, 390
+  size: 254, 56
+  orig: 256, 60
+  offset: 1, 2
+  index: -1
+qianjiao
+  rotate: false
+  xy: 436, 546
+  size: 96, 98
+  orig: 96, 98
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 377
+  size: 374, 531
+  orig: 374, 531
+  offset: 0, 0
+  index: -1
+shenti2
+  rotate: true
+  xy: 2, 2
+  size: 373, 531
+  orig: 373, 531
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 436, 405
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1
+yanjing1
+  rotate: true
+  xy: 491, 401
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1

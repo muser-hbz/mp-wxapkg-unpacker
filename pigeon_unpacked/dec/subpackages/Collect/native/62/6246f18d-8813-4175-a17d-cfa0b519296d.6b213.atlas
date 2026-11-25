@@ -1,0 +1,111 @@
+
+zhengchang_puteng.png
+size: 1182,251
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chibang_you
+  rotate: false
+  xy: 683, 9
+  size: 174, 240
+  orig: 174, 240
+  offset: 0, 0
+  index: -1
+chibang_zuo
+  rotate: true
+  xy: 859, 53
+  size: 196, 154
+  orig: 196, 154
+  offset: 0, 0
+  index: -1
+gezi_guan
+  rotate: true
+  xy: 1141, 108
+  size: 49, 35
+  orig: 49, 35
+  offset: 0, 0
+  index: -1
+gezi_zui
+  rotate: true
+  xy: 1020, 7
+  size: 65, 85
+  orig: 67, 87
+  offset: 1, 1
+  index: -1
+gezizui
+  rotate: true
+  xy: 1134, 194
+  size: 55, 46
+  orig: 57, 48
+  offset: 1, 1
+  index: -1
+han1
+  rotate: true
+  xy: 1107, 33
+  size: 39, 32
+  orig: 41, 34
+  offset: 1, 1
+  index: -1
+han2
+  rotate: true
+  xy: 1141, 49
+  size: 57, 27
+  orig: 59, 29
+  offset: 1, 1
+  index: -1
+jiao_you
+  rotate: true
+  xy: 1015, 74
+  size: 82, 124
+  orig: 82, 124
+  offset: 0, 0
+  index: -1
+jiao_zuo
+  rotate: true
+  xy: 1015, 158
+  size: 91, 117
+  orig: 91, 117
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 9
+  size: 356, 240
+  orig: 356, 240
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 360, 2
+  size: 247, 321
+  orig: 247, 321
+  offset: 0, 0
+  index: -1
+yanjing_you
+  rotate: true
+  xy: 859, 3
+  size: 48, 77
+  orig: 50, 79
+  offset: 1, 1
+  index: -1
+yanjing_youbi
+  rotate: false
+  xy: 1134, 159
+  size: 42, 33
+  orig: 44, 35
+  offset: 1, 1
+  index: -1
+yanjing_zuo
+  rotate: true
+  xy: 938, 8
+  size: 43, 80
+  orig: 45, 82
+  offset: 1, 1
+  index: -1
+yanjing_zuobi
+  rotate: false
+  xy: 1141, 11
+  size: 37, 36
+  orig: 39, 38
+  offset: 1, 1
+  index: -1

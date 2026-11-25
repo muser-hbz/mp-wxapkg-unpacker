@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 676,383
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+前腿
+  rotate: true
+  xy: 370, 16
+  size: 111, 155
+  orig: 111, 155
+  offset: 0, 0
+  index: -1
+后退
+  rotate: true
+  xy: 527, 29
+  size: 98, 147
+  orig: 98, 147
+  offset: 0, 0
+  index: -1
+头
+  rotate: false
+  xy: 370, 129
+  size: 292, 252
+  orig: 292, 252
+  offset: 0, 0
+  index: -1
+身
+  rotate: false
+  xy: 2, 2
+  size: 366, 379
+  orig: 366, 379
+  offset: 0, 0
+  index: -1

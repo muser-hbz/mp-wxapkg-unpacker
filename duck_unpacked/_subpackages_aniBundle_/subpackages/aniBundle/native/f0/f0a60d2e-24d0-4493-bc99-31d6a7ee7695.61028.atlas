@@ -1,0 +1,34 @@
+
+hj.png
+size: 1676,577
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+描边3
+  rotate: true
+  xy: 1204, 298
+  size: 277, 470
+  orig: 277, 470
+  offset: 0, 0
+  index: -1
+猪
+  rotate: true
+  xy: 1204, 35
+  size: 261, 454
+  orig: 261, 454
+  offset: 0, 0
+  index: -1
+竖绳
+  rotate: true
+  xy: 2, 2
+  size: 31, 1107
+  orig: 31, 1107
+  offset: 0, 0
+  index: -1
+背景4
+  rotate: true
+  xy: 2, 35
+  size: 540, 1200
+  orig: 540, 1200
+  offset: 0, 0
+  index: -1

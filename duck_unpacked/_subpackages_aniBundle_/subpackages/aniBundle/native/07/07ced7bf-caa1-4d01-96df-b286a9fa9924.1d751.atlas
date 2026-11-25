@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 739,303
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+手机
+  rotate: false
+  xy: 2, 16
+  size: 173, 285
+  orig: 173, 285
+  offset: 0, 0
+  index: -1
+手机字
+  rotate: true
+  xy: 177, 2
+  size: 164, 78
+  orig: 164, 78
+  offset: 0, 0
+  index: -1
+摇晃木板
+  rotate: false
+  xy: 339, 10
+  size: 341, 79
+  orig: 341, 79
+  offset: 0, 0
+  index: -1
+摇晃水果
+  rotate: false
+  xy: 339, 91
+  size: 342, 75
+  orig: 342, 75
+  offset: 0, 0
+  index: -1
+晃动
+  rotate: true
+  xy: 257, 5
+  size: 161, 80
+  orig: 161, 80
+  offset: 0, 0
+  index: -1
+箭头
+  rotate: false
+  xy: 177, 168
+  size: 560, 133
+  orig: 560, 133
+  offset: 0, 0
+  index: -1

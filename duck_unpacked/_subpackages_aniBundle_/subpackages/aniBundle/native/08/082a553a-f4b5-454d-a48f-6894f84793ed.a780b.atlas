@@ -1,0 +1,55 @@
+
+jiuwei.png
+size: 649,567
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+右尾下
+  rotate: false
+  xy: 2, 2
+  size: 254, 168
+  orig: 254, 168
+  offset: 0, 0
+  index: -1
+右尾后
+  rotate: false
+  xy: 480, 6
+  size: 167, 160
+  orig: 167, 160
+  offset: 0, 0
+  index: -1
+右尾大
+  rotate: false
+  xy: 252, 231
+  size: 256, 334
+  orig: 256, 334
+  offset: 0, 0
+  index: -1
+左尾
+  rotate: false
+  xy: 258, 37
+  size: 220, 192
+  orig: 220, 192
+  offset: 0, 0
+  index: -1
+左尾下
+  rotate: true
+  xy: 510, 378
+  size: 187, 121
+  orig: 187, 121
+  offset: 0, 0
+  index: -1
+左尾中
+  rotate: true
+  xy: 510, 168
+  size: 208, 81
+  orig: 208, 81
+  offset: 0, 0
+  index: -1
+身
+  rotate: false
+  xy: 2, 172
+  size: 248, 393
+  orig: 248, 393
+  offset: 0, 0
+  index: -1
