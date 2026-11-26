@@ -1,0 +1,920 @@
+原始游戏关卡与难度逻辑：可读证据摘录
+
+来源：/Users/bingzhou/Projects/mp-wxapkg-unpacker/fruits_unpacked/__WITHOUT_MULTI_PLUGINCODE__/game.js
+SHA-256：d035c78214f0209ec164dcb5529e064d9b67f044540f4a7dfe65c27cdc706048
+说明：只替换可解析的字符串/数值别名并格式化，未移除控制流混淆。
+每段标注原文件行号及 0-based UTF-16 字符区间；摘录用于阅读，不是可直接运行的完整模块。
+原始参数类的实际数据另见 level_parameters.json。
+
+=== InitCf | game.js:49 | UTF16 [600300, 600414) ===
+function (t) {
+    var n = 'nowConfig';
+    switch (t) {
+    case 1:
+        this['nowConfig'] = new i();
+        break;
+    case 2:
+        this['nowConfig'] = new e();
+        break;
+    case 3:
+        this['nowConfig'] = new a();
+    }
+}
+
+=== initLvCfg | game.js:49 | UTF16 [697199, 697378) ===
+function (t) {
+    var n = to, r = n[7], i = n[3];
+    return this['stopMoveX'] = 0, this['fallX'] = 0, this['curTheme_'] = Math['floor'](Math['max'](1, t - 1) / 10 % 4), this['stopDownY_'] = 728 - this['halfGameH'], this['initLvConfig'](t);
+}
+
+=== initLvConfig | game.js:49 | UTF16 [697388, 704905) ===
+function (t) {
+    var n, r = to, i = ro, a = r[5], u = r[6], f = r[11], h = r[2], v = r[7], l = r[4], d = r[9], k = r[3], m = r[8], p = 30, g = 100, y = 250, w = 55, _ = 'typeArr', M = 'countArr', S = 'scaleExp', A = 'moveDir', C = 'MoveDirection', x = 'NONE', T = 'itemLayout', L = 'itemConnet', I = 'holeItemTypeArr', R = 'randomBox', E = 'woodenObs', D = 'obsCount', N = 'iceCount', P = 'push', G = 'DOWN', O = 'getIns', F = 'lv2Config', B = 'typeBase', z = 'typeStage', U = 'getMaxType', H = 'allCreateN', V = 'RandomInt', W = 'lastMultiple', J = 'lv2_3_5Config', j = 'num100Base1', q = 'num100Base3', K = 'curTheme', Y = 'min', X = 'floor', Z = 'num10Base', Q = 'num30Base', $ = 'num30Add', tt = 'num100Base2', nt = 'num100Add1', rt = 'num100reduce1', it = 'num100Add2', et = 'num100reduce2', at = 'onsNumScale', ut = 'TwoNumScale', st = 'lastTypeMin', ot = 'lastTypeScale', ct = 'stopMoveX', ft = 'halfGameW', ht = 'fallX', vt = 'lv4Config', lt = 'num30reduce', bt = 'num100Base4', dt = 'lv6Config', kt = 'randomMin', mt = 'randomBase', pt = 'randomScale', gt = 'lv7Config', yt = 'lv8Config', wt = 'lv9Config', _t = 'lv10Config', Mt = 'length';
+    if ((n = new c())['typeArr'] = [], n['countArr'] = [], n['scaleExp'] = 1, n['moveDir'] = s['MoveDirection']['NONE'], n['itemLayout'] = !1, n['itemConnet'] = !1, n['holeItemTypeArr'] = [], n['randomBox'] = 0, n['woodenObs'] = 0, n['obsCount'] = 0, n['iceCount'] = 0, 1 == t) {
+        for (var St = [], At = [], Ct = 1; Ct < 2; Ct++)
+            St['push'](Ct), At['push'](4);
+        n['typeArr']['push'](St), n['countArr']['push'](At), n['moveDir'] = s['MoveDirection']['DOWN'];
+    } else if (2 == t)
+        if (e['platform'] == e['Platform']['BYTEDANCE_MINI_GAME']) {
+            for (var xt = [], Tt = [], Lt = 1; Lt <= 10; Lt++)
+                xt['push'](Lt), Tt['push'](4);
+            n['typeArr']['push'](xt), n['countArr']['push'](Tt), n['moveDir'] = s['MoveDirection']['NONE'];
+        } else {
+            for (var It = o['getIns']()['lv2Config']['oneCreatreN'], Rt = o['getIns']()['lv2Config']['twoCreatreN'], Et = 0, Dt = 0; Dt < 3; Dt++) {
+                var Nt, Pt, Gt;
+                Gt = [], Pt = [], Nt = o['getIns']()['lv2Config']['typeBase'] + o['getIns']()['lv2Config']['typeStage'] * Dt, 2 === Dt && (Nt += o['getIns']()['lv2Config']['lastTypeAdd']), Nt = this['getMaxType'](Nt);
+                for (var Ot = 1; Ot <= Nt && Et < o['getIns']()['lv2Config']['allCreateN']; Ot++) {
+                    var Ft;
+                    Gt['push'](Ot), Ft = 2, Dt > 1 && (Ft *= this['RandomInt'](1, o['getIns']()['lv2Config']['lastMultiple'])), Et += Ft, Pt['push'](Ft);
+                }
+                if (0 === Dt)
+                    for (; Et < It;)
+                        Gt['push'](this['RandomInt'](1, Nt)), Et += 2, Pt['push'](2);
+                else if (1 === Dt)
+                    for (; Et < Rt;)
+                        Gt['push'](this['RandomInt'](1, Nt)), Et += 2, Pt['push'](2);
+                else if (2 === Dt)
+                    for (; Et < o['getIns']()['lv2Config']['allCreateN'];)
+                        Gt['push'](this['RandomInt'](1, Nt)), Et += 2, Pt['push'](2);
+                n['typeArr']['push'](Gt), n['countArr']['push'](Pt);
+            }
+            n['moveDir'] = s['MoveDirection']['DOWN'];
+        }
+    else if (3 == t || t % 10 == 3 || t % 10 == 1 || t > 10 && t % 10 == 2 || 5 == t || t % 10 == 5) {
+        var Bt, zt, Ut;
+        zt = o['getIns']()['lv2_3_5Config']['num100Base1'], Bt = o['getIns']()['lv2_3_5Config']['num100Base3'], t % 10 == 1 && 3 === this['curTheme'] && (n['obsCount'] = Math['min'](o['getIns']()['lv2_3_5Config']['obsMax'], o['getIns']()['lv2_3_5Config']['obsBase'] + Math['floor'](t / o['getIns']()['lv2_3_5Config']['obsAdd']))), t % 10 == 1 && 2 === this['curTheme'] && (n['iceCount'] = Math['min'](o['getIns']()['lv2_3_5Config']['iceMax'], o['getIns']()['lv2_3_5Config']['iceBase'] + Math['floor'](t / o['getIns']()['lv2_3_5Config']['iceAdd']))), t % 10 == 2 && (n['scaleExp'] = 0.9, n['woodenObs'] = o['getIns']()['lv2_3_5Config']['woodenObsMax'], Math['floor'](t / o['getIns']()['lv2_3_5Config']['woodenObsEasylv']) % o['getIns']()['lv2_3_5Config']['woodenObsEasyLv2'] == 0 && (n['woodenObs'] = o['getIns']()['lv2_3_5Config']['woodenObsBase']), zt = o['getIns']()['lv2_3_5Config']['num100Base1_2'], Bt = o['getIns']()['lv2_3_5Config']['num100Base3_2']), Ut = o['getIns']()['lv2_3_5Config']['num10Base'], t < 10 ? Ut += o['getIns']()['lv2_3_5Config']['num10Add'] * (t - 3) : t > 10 && t < p ? Ut = o['getIns']()['lv2_3_5Config']['num30Base'] + o['getIns']()['lv2_3_5Config']['num30Add'] * (t - 11) : t > p && t < g ? Ut = Math['min'](zt, o['getIns']()['lv2_3_5Config']['num100Base2'] + o['getIns']()['lv2_3_5Config']['num100Add1'] * Math['floor']((t - p) / o['getIns']()['lv2_3_5Config']['num100reduce1'])) : t >= g && (Ut = Math['min'](Bt, zt + o['getIns']()['lv2_3_5Config']['num100Add2'] * Math['floor']((t - g) / o['getIns']()['lv2_3_5Config']['num100reduce2'])));
+        for (var Ht = Math['floor'](o['getIns']()['lv2_3_5Config']['onsNumScale'] * Ut), Vt = Math['floor'](o['getIns']()['lv2_3_5Config']['TwoNumScale'] * Ut), Wt = 0, Jt = 0; Jt < 3; Jt++) {
+            var jt, qt, Kt;
+            jt = [], qt = [], Kt = o['getIns']()['lv2_3_5Config']['typeBase'] + o['getIns']()['lv2_3_5Config']['typeStage'] * Jt, 2 === Jt && (Kt += Math['min'](o['getIns']()['lv2_3_5Config']['lastTypeMin'], Math['floor'](t / o['getIns']()['lv2_3_5Config']['lastTypeScale']))), Kt = this['getMaxType'](Kt);
+            for (var Yt = 1; Yt <= Kt && Wt < Ut; Yt++) {
+                var Xt;
+                jt['push'](Yt), Xt = 2, Jt > 1 && (Xt *= this['RandomInt'](1, 2)), Wt += Xt, qt['push'](Xt);
+            }
+            if (0 === Jt)
+                for (; Wt < Ht;)
+                    jt['push'](this['RandomInt'](1, Kt)), Wt += 2, qt['push'](2);
+            else if (1 === Jt)
+                for (; Wt < Vt;)
+                    jt['push'](this['RandomInt'](1, Kt)), Wt += 2, qt['push'](2);
+            else if (2 == Jt)
+                for (; Wt < Ut;)
+                    jt['push'](this['RandomInt'](1, Kt)), Wt += 2, qt['push'](2);
+            n['typeArr']['push'](jt), n['countArr']['push'](qt);
+        }
+        n['moveDir'] = s['MoveDirection']['DOWN'];
+    } else if (4 == t || t % 10 == 4) {
+        var Zt;
+        this['stopMoveX'] = this['halfGameW'] - y, this['fallX'] = this['halfGameW'] - g, Zt = o['getIns']()['lv4Config']['num10Base'], t > 10 && t < p ? Zt = o['getIns']()['lv4Config']['num30Base'] + o['getIns']()['lv4Config']['num30Add'] * Math['floor']((t - 10) / o['getIns']()['lv4Config']['num30reduce']) : t > p && t < g ? Zt = Math['min'](o['getIns']()['lv4Config']['num100Base1'], o['getIns']()['lv4Config']['num100Base2'] + o['getIns']()['lv4Config']['num100Add1'] * Math['floor']((t - p) / o['getIns']()['lv4Config']['num100reduce1'])) : t >= g && (Zt = Math['min'](o['getIns']()['lv4Config']['num100Base3'], o['getIns']()['lv4Config']['num100Base4'] + o['getIns']()['lv4Config']['num100Add2'] * Math['floor']((t - g) / o['getIns']()['lv4Config']['num100reduce2'])));
+        for (var Qt = Math['floor'](o['getIns']()['lv4Config']['onsNumScale'] * Zt), $t = Math['floor'](o['getIns']()['lv4Config']['TwoNumScale'] * Zt), tn = 0, nn = 0; nn < 3; nn++) {
+            var rn, en, an;
+            rn = [], an = [], en = o['getIns']()['lv4Config']['typeBase'] + o['getIns']()['lv4Config']['typeStage'] * nn, 2 == nn && (en += Math['min'](o['getIns']()['lv4Config']['lastTypeMin'], Math['floor'](t / o['getIns']()['lv4Config']['lastTypeScale']))), en = this['getMaxType'](en);
+            for (var un = 1; un <= en && tn < Zt; un++) {
+                var sn;
+                rn['push'](un), sn = 2, nn > 0 && (sn *= this['RandomInt'](1, o['getIns']()['lv4Config']['lastMultiple'])), tn += sn, an['push'](sn);
+            }
+            if (0 === nn)
+                for (; tn < Qt;)
+                    rn['push'](this['RandomInt'](1, en)), tn += 2, an['push'](2);
+            else if (1 == nn)
+                for (; tn < $t;)
+                    rn['push'](this['RandomInt'](1, en)), tn += 2, an['push'](2);
+            else if (2 == nn)
+                for (; tn < Zt;)
+                    rn['push'](this['RandomInt'](1, en)), tn += 2, an['push'](2);
+            n['typeArr']['push'](rn), n['countArr']['push'](an);
+        }
+        n['moveDir'] = s['MoveDirection']['RIGHT'];
+    } else if (6 == t || t % 10 == 6)
+        n['itemLayout'] = !0, n['randomBox'] = Math['min'](o['getIns']()['lv6Config']['randomMin'], o['getIns']()['lv6Config']['randomBase'] + Math['floor'](t / o['getIns']()['lv6Config']['randomScale'])), n['moveDir'] = s['MoveDirection']['DOWN'];
+    else if (7 == t || t % 10 == 7) {
+        var on;
+        on = o['getIns']()['lv7Config']['num10Base'], t > 10 && t < p ? on = o['getIns']()['lv7Config']['num30Base'] + o['getIns']()['lv7Config']['num30Add'] * Math['floor']((t - 10) / +o['getIns']()['lv7Config']['num30reduce']) : t > p && t < g ? on = Math['min'](o['getIns']()['lv7Config']['num100Base1'], o['getIns']()['lv7Config']['num100Base2'] + o['getIns']()['lv7Config']['num100Add1'] * Math['floor']((t - p) / o['getIns']()['lv7Config']['num100reduce1'])) : t >= g && (on = Math['min'](o['getIns']()['lv7Config']['num100Base3'], o['getIns']()['lv7Config']['num100Base4'] + o['getIns']()['lv7Config']['num100Add2'] * Math['floor']((t - g) / o['getIns']()['lv7Config']['num100reduce2'])));
+        for (var cn = 0, fn = Math['floor'](o['getIns']()['lv7Config']['onsNumScale'] * on), hn = Math['floor'](o['getIns']()['lv7Config']['TwoNumScale'] * on), vn = 0; vn < 3; vn++) {
+            var ln, bn, dn;
+            bn = [], ln = [], dn = o['getIns']()['lv7Config']['typeBase'] + o['getIns']()['lv7Config']['typeStage'] * vn, 2 == vn && (dn += Math['min'](o['getIns']()['lv7Config']['lastTypeMin'], Math['floor'](t / o['getIns']()['lv7Config']['lastTypeScale']))), dn = this['getMaxType'](dn);
+            for (var kn = 1; kn <= dn && cn < on; kn++) {
+                var mn;
+                bn['push'](kn), mn = 2, vn > 0 && (mn *= this['RandomInt'](1, o['getIns']()['lv7Config']['lastMultiple'])), cn += mn, ln['push'](mn);
+            }
+            if (0 == vn)
+                for (; cn < fn;)
+                    bn['push'](this['RandomInt'](1, dn)), cn += 2, ln['push'](2);
+            else if (1 == vn)
+                for (; cn < hn;)
+                    bn['push'](this['RandomInt'](1, dn)), cn += 2, ln['push'](2);
+            else if (2 == vn)
+                for (; cn < on;)
+                    bn['push'](this['RandomInt'](1, dn)), cn += 2, ln['push'](2);
+            n['typeArr']['push'](bn), n['countArr']['push'](ln);
+        }
+        n['randomBox'] = Math['min'](o['getIns']()['lv7Config']['randomMin'], o['getIns']()['lv7Config']['randomBase'] + Math['floor'](t / o['getIns']()['lv7Config']['randomScale'])), n['moveDir'] = s['MoveDirection']['DOWN'];
+    } else if (8 == t || t % 10 == 8) {
+        var pn;
+        pn = o['getIns']()['lv8Config']['num10Base'], t > 10 && t < p ? pn = o['getIns']()['lv8Config']['num30Base'] + o['getIns']()['lv8Config']['num30Add'] * Math['floor']((t - 10) / o['getIns']()['lv8Config']['num30reduce']) : t > p && t < g ? pn = Math['min'](o['getIns']()['lv8Config']['num100Base1'], o['getIns']()['lv8Config']['num100Base2'] + o['getIns']()['lv8Config']['num100Add1'] * Math['floor']((t - p) / o['getIns']()['lv8Config']['num100reduce1'])) : t >= g && (pn = Math['min'](o['getIns']()['lv8Config']['num100Base3'], o['getIns']()['lv8Config']['num100Base4'] + o['getIns']()['lv8Config']['num100Add2'] * Math['floor']((t - g) / o['getIns']()['lv8Config']['num100reduce2'])));
+        for (var gn = Math['floor'](o['getIns']()['lv8Config']['onsNumScale'] * pn), yn = Math['floor'](o['getIns']()['lv8Config']['TwoNumScale'] * pn), wn = 0, _n = 0; _n < 3; _n++) {
+            var Mn, Sn, An;
+            An = [], Sn = [], Mn = o['getIns']()['lv8Config']['typeBase'] + o['getIns']()['lv8Config']['typeStage'] * _n, 2 === _n && (Mn += Math['min'](o['getIns']()['lv8Config']['lastTypeMin'], Math['floor'](t / o['getIns']()['lv8Config']['lastTypeScale']))), Mn = this['getMaxType'](Mn);
+            for (var Cn = 1; Cn <= Mn && pn < wn; Cn++) {
+                var xn;
+                An['push'](Cn), xn = 2, _n > 0 && (xn *= this['RandomInt'](1, o['getIns']()['lv8Config']['lastMultiple'])), wn += xn, Sn['push'](xn);
+            }
+            if (0 == _n)
+                for (; wn < gn;)
+                    An['push'](this['RandomInt'](1, Mn)), wn += 2, Sn['push'](2);
+            else if (1 == _n)
+                for (; wn < yn;)
+                    An['push'](this['RandomInt'](1, Mn)), wn += 2, Sn['push'](2);
+            else if (2 == _n)
+                for (; wn < pn;)
+                    An['push'](this['RandomInt'](1, Mn)), wn += 2, Sn['push'](2);
+            n['typeArr']['push'](An), n['countArr']['push'](Sn);
+        }
+        n['itemConnet'] = !0, n['moveDir'] = s['MoveDirection']['DOWN'];
+    } else if (9 == t || t % 10 == 9) {
+        var Tn;
+        this['stopMoveX'] = y - this['halfGameW'], this['fallX'] = g - this['halfGameW'], Tn = o['getIns']()['lv9Config']['num10Base'], t > 10 && t < p ? Tn = o['getIns']()['lv9Config']['num30Base'] + o['getIns']()['lv9Config']['num30Add'] * Math['floor']((t - 10) / o['getIns']()['lv9Config']['num30reduce']) : t > p && t < g ? Tn = Math['min'](o['getIns']()['lv9Config']['num100Base1'], o['getIns']()['lv9Config']['num100Base2'] + o['getIns']()['lv9Config']['num100Add1'] * Math['floor']((t - p) / o['getIns']()['lv9Config']['num100reduce1'])) : t >= g && (Tn = Math['min'](o['getIns']()['lv9Config']['num100Base3'], o['getIns']()['lv9Config']['num100Base4'] + o['getIns']()['lv9Config']['num100Add2'] * Math['floor']((t - g) / o['getIns']()['lv9Config']['num100reduce2'])));
+        for (var Ln = Math['floor'](o['getIns']()['lv9Config']['onsNumScale'] * Tn), In = Math['floor'](o['getIns']()['lv9Config']['TwoNumScale'] * Tn), Rn = 0, En = 0; En < 3; En++) {
+            var Dn, Nn, Pn;
+            Dn = [], Pn = [], Nn = o['getIns']()['lv9Config']['typeBase'] + o['getIns']()['lv9Config']['typeStage'] * En, 2 === En && (Nn += Math['min'](o['getIns']()['lv9Config']['lastTypeMin'], Math['floor'](t / o['getIns']()['lv9Config']['lastTypeScale']))), Nn = this['getMaxType'](Nn);
+            for (var Gn = 1; Gn <= Nn && Rn < Tn; Gn++) {
+                var On;
+                Dn['push'](Gn), On = 2, En > 0 && (On *= this['RandomInt'](1, o['getIns']()['lv9Config']['lastMultiple'])), Rn += On, Pn['push'](On);
+            }
+            if (0 == En)
+                for (; Rn < Ln;)
+                    Dn['push'](this['RandomInt'](1, Nn)), Rn += 2, Pn['push'](2);
+            else if (1 == En)
+                for (; Rn < In;)
+                    Dn['push'](this['RandomInt'](1, Nn)), Rn += 2, Pn['push'](2);
+            else if (2 == En)
+                for (; Rn < Tn;)
+                    Dn['push'](this['RandomInt'](1, Nn)), Rn += 2, Pn['push'](2);
+            n['typeArr']['push'](Dn), n['countArr']['push'](Pn);
+        }
+        n['moveDir'] = s['MoveDirection']['LEFT'];
+    } else if (10 == t || t % 10 == 0)
+        for (var Fn, Bn, zn, Un, Hn, Vn = 0, Wn = b; Vn < Wn.length; Vn++) {
+            switch (Wn[Vn]) {
+            case 0:
+                zn = Math['ceil']((this['halfGameH'] - 190 - this['stopDownY'] + g) * this['visibleSize']['width'] / (w * Math['PI'] * w)), Un = [], Hn = 0, Fn = Math['min'](o['getIns']()['lv10Config']['holeBase'] + Math['floor'](t / o['getIns']()['lv10Config']['holeScale']), o['getIns']()['lv10Config']['holeMax']);
+                break;
+            case 1:
+                for (var Jn = 0; Jn < Un['length']; Jn++) {
+                    var jn;
+                    jn = this['RandomInt'](0, n['holeItemTypeArr']['length'] - 1), n['holeItemTypeArr'][jn]['push'](Un[Jn]);
+                }
+                break;
+            case 2:
+                Fn += o['getIns']()['lv10Config']['holeAddbase'] * (n['holeItemTypeArr']['length'] - 2);
+                break;
+            case 3:
+                for (var qn = (Fn - Un['length']) / 2, Kn = 0; Kn < qn; Kn++) {
+                    var Yn;
+                    Yn = Xn[this['RandomInt'](0, Xn['length'] - 1)], Un['push'](Yn), Un['push'](Yn);
+                }
+                break;
+            case 4:
+                for (var Xn = this['ranTypeArr'](28), Zn = 0; Zn < 2; Zn++) {
+                    for (var Qn = [], $n = [], tr = 0 === Zn ? 0 : 4, nr = 0 === Zn ? 4 : Xn['length'], rr = tr; rr < nr && Hn < zn; rr++) {
+                        var ir;
+                        Qn['push'](Xn[rr]), ir = Math['random']() > 0.5 ? 2 : 4, 1 === Zn && Un['length'] < Fn ? (Un['push'](Xn[rr]), $n['push'](ir - 1), Hn += ir - 1) : ($n['push'](ir), Hn += ir), 1 === Zn && rr === nr - 1 && (rr = tr);
+                    }
+                    n['typeArr']['push'](Qn), n['countArr']['push']($n);
+                }
+                break;
+            case 5:
+                Bn = t / 10 % 10;
+                break;
+            case 6:
+                for (var er = 0; er < n['holeItemTypeArr']['length']; er++)
+                    n['holeItemTypeArr'][er]['push'](Un['shift']());
+                break;
+            case 7:
+                n['scaleExp'] = 0.9, n['moveDir'] = s['MoveDirection']['NONE'];
+                break;
+            case 8:
+                n['holeItemTypeArr'] = 1 == Bn ? [
+                    [],
+                    []
+                ] : Bn >= 2 && Bn <= 7 ? [
+                    [],
+                    [],
+                    []
+                ] : [
+                    [],
+                    [],
+                    [],
+                    []
+                ];
+                break;
+            case 9:
+                Un['sort'](function (t, n) {
+                    return t - n;
+                });
+            }
+        }
+    return n;
+}
+
+=== getMaxType | game.js:49 | UTF16 [704915, 705009) ===
+function (t) {
+    var n = to, r = ro, i = 'min';
+    return 0 == this['useSkinId'] ? Math['min'](33, t) : Math['min'](28, t);
+}
+
+=== genLvMapData | game.js:49 | UTF16 [683828, 687723) ===
+function (t, r, i, h) {
+    var v, b, d, k, m, p, g = to, y = ro, w = g[4], _ = g[6], M = g[7], S = g[5], A = g[1], C = g[2], x = g[3], T = g[0], L = 20, I = 30, R = 100, E = 238, D = 11, N = 278, P = 270, G = 880, O = 208, F = '_cMaxY', B = 'calculatedInfo', z = 'inst', U = 'stopDownY', H = 'floor', V = 'min', W = 'RandomInt', J = 'push', j = 'shuffleArray', q = 'done', K = 'value', Y = 'length', X = 'shift', Z = 'getPt', Q = 'radius', $ = 'scale', tt = 'randomBox', nt = 'indexOf', rt = 'type', it = 'woodenObs', et = 'ins', at = 'getNode', ut = 'setPosition', st = 'v3', ot = 'halfGameW', ct = 'to', ft = 'apply', ht = 'start', vt = 'holeItemTypeArr', lt = 'obsCount', bt = 'halfGameH', dt = 'iceCount', kt = 'pos';
+    if (k = this, this['_cMinY'] = 0, this['_cMaxY'] = 0, this['_cMinX'] = 0, this['_cMaxX'] = 0, this['_bottomY'] = r, this['calculatedInfo'] = [], d = c['inst']['initLvCfg'](t), v = d['typeArr'], m = d['countArr'], this['_cMoveDir'] = d['moveDir'], this['initPart'](d['scaleExp']), p = 83, d['itemLayout']) {
+        var mt, pt, gt, yt;
+        if (mt = 42, 0 == (pt = (t - 6) % 40) ? o['inst']['InitPart'](7, mt, 0, p, p, c['inst']['stopDownY']) : 10 === pt ? (mt = 45, o['inst']['InitPart2'](7, mt, 0, p, p, c['inst']['stopDownY'])) : L === pt ? (mt = 48, o['inst']['InitPart7'](7, mt, 0, p, p, c['inst']['stopDownY'])) : I === pt && (mt = 89, o['inst']['InitPart8'](7, mt, 0, p, p, c['inst']['stopDownY'])), yt = o['inst']['GetParts'](), gt = 130, t > 10 && t < I)
+            gt = 182 + L * Math['floor']((t - 10) / 10);
+        else if (t > I && t < R) {
+            var wt;
+            wt = Math['floor']((t - I) / 5), gt = Math['min'](E, 210 + 2 * wt);
+        } else if (t >= R) {
+            var _t;
+            _t = Math['floor']((t - R) / 10), gt = Math['min'](268, E + 2 * _t);
+        }
+        for (var Mt = [], At = [], Ct = Math['floor'](gt / 3), xt = 22 + Math['min'](D, Math['floor'](t / 10)); gt > 0;) {
+            var Tt, Lt, It;
+            Lt = Ct > 0 ? Mt : At, It = Ct > 0 ? D : xt, Tt = c['inst']['RandomInt'](1, It), Lt['push'](Tt, Tt), Ct > 0 && (Ct -= 2), gt -= 2;
+        }
+        this['shuffleArray'](Mt), this['shuffleArray'](At);
+        for (var Rt, Et = n(yt); !(Rt = Et())['done'];) {
+            var Dt;
+            if (Dt = Rt['value'], !Mt['length'] && !At['length'])
+                break;
+            for (var Nt, Pt = n(Dt); !(Nt = Pt())['done'];) {
+                var Gt, Ot, Ft;
+                if (Ot = Nt['value'], !(Ft = Mt['length'] ? Mt['shift']() : At['shift']()))
+                    break;
+                Gt = this['getPt'](Ft), this['calculatedInfo']['push'](new s(Ft, Ot['position'], 0, Gt['radius'], Gt['scale'])), Ot['have'] = !0;
+            }
+        }
+        if (d['randomBox'] > 0)
+            for (var Bt = []; d['randomBox'] > 0;) {
+                var zt;
+                zt = c['inst']['RandomInt'](0, this['calculatedInfo']['length'] - 1), -1 == Bt['indexOf'](zt) && (d['randomBox']--, this['calculatedInfo'][zt]['type'] = 2, Bt['push'](zt));
+            }
+    } else {
+        if (d['woodenObs'] > 0)
+            for (var Ut = 0; Ut < d['woodenObs']; Ut++) {
+                var Ht;
+                Ht = f['ins']['getNode']('stake'), i['addChild'](Ht), 6 == d['woodenObs'] ? Ht['setPosition'](e['v3'](Ut % 2 == 0 ? c['inst']['halfGameW'] : -c['inst']['halfGameW'], R + N * Math['floor'](Ut / 2))) : 2 == d['woodenObs'] ? Ht['setPosition'](e['v3'](0, 150 + N * Ut)) : 4 == d['woodenObs'] && Ht['setPosition'](e['v3'](Ut < 1 ? -P : P, 350)), Ht['setScale'](0, 0, 0), a(Ht)['to'](0.8, function () {
+                    var t, n = to, r = 'scale';
+                    return (t = Pu({}, r, 0))['scale'] = e['v3'](1, 1, 1), t;
+                }['apply']())['start']();
+            }
+        for (var Vt = function (n) {
+                    var r = to, i = ro, e = r[2], a = r[6], s = r[4], o = r[7], f = 70, h = 50, b = 140, p = 'itemRadius', g = 'scaleExp', y = 'moveDir', w = 'MoveDirection', _ = '_cMinY', M = '_cMaxY', S = '_bottomY', A = 'gameW', C = '_cMaxX', x = '_cMinX', T = 'halfGameW', L = 'halfGameH', I = 'stopDownY', R = 'length', E = v[n], D = m[n], N = 0;
+                    D['forEach'](function (t) {
+                        N += t;
+                    });
+                    var P = N * Math['PI'] * k['itemRadius'] * k['itemRadius'] * d['scaleExp'], G = c['inst'];
+                    switch (d['moveDir']) {
+                    case u['MoveDirection']['DOWN']:
+                        k['_cMinY'] = 0 === k['_cMaxY'] ? k['_bottomY'] : k['_cMaxY'], k['_cMaxY'] = k['_cMinY'] + P / G['gameW'];
+                        break;
+                    case u['MoveDirection']['RIGHT']:
+                        k['_cMaxX'] = 0 === k['_cMinX'] ? -G['halfGameW'] - f : k['_cMinX'], k['_cMinX'] = k['_cMaxX'] - P / (G['halfGameH'] - G['stopDownY'] - h);
+                        break;
+                    case u['MoveDirection']['LEFT']:
+                        k['_cMinX'] = 0 === k['_cMaxX'] ? G['halfGameW'] + f : k['_cMaxX'], k['_cMaxX'] = k['_cMinX'] + P / (G['halfGameH'] - G['stopDownY'] - h);
+                        break;
+                    case u['MoveDirection']['NONE']:
+                        k['_cMinY'] = 0 === k['_cMaxY'] ? k['_bottomY'] : k['_cMaxY'], 1 === v['length'] ? k['_cMaxY'] = G['halfGameH'] - b : k['_cMaxY'] = Math['min'](k['_cMinY'] + P / G['gameW'], G['halfGameH'] - b);
+                    }
+                    l(d['moveDir']), k['initItems'](t, E, D, d['scaleExp'], d['moveDir'], d['itemLayout'], d['holeItemTypeArr']['length']);
+                }, Wt = 0; Wt < v['length']; Wt++)
+            Vt(Wt);
+        if (d['randomBox'] > 0)
+            for (var Jt = []; d['randomBox'] > 0;) {
+                var jt;
+                jt = c['inst']['RandomInt'](0, this['calculatedInfo']['length'] - 1), -1 == Jt['indexOf'](jt) && (d['randomBox']--, this['calculatedInfo'][jt]['type'] = 2, Jt['push'](jt));
+            }
+        if (d['holeItemTypeArr']['length'] > 0) {
+            l('黑洞', d['holeItemTypeArr']);
+            for (var qt = 0; qt < d['holeItemTypeArr']['length']; qt++) {
+                var Kt, Yt;
+                Yt = d['holeItemTypeArr'][qt], Kt = this['getPt'](0), this['calculatedInfo'][qt]['type'] = 3, this['calculatedInfo'][qt]['radius'] = Kt['radius'], this['calculatedInfo'][qt]['holeFruitTyes'] = Yt;
+            }
+        }
+        if (d['obsCount'] > 0)
+            for (var Xt = (this['_cMaxY'] - (G - c['inst']['halfGameH'])) / d['obsCount'], Zt = G - c['inst']['halfGameH'] + Xt / 2, Qt = 0; Qt < d['obsCount']; Qt++) {
+                var $t, tn;
+                tn = c['inst']['RandomInt'](1, 3), $t = f['ins']['getNode']('obs' + tn), h['insertChild']($t, 1), $t['setPosition'](e['v3'](this['randomN'](-O, O), Zt)), $t['scale'] = e['v3'](0, 0, 0), a($t)['to'](0.8, function () {
+                    var t, n = to, r = 'scale';
+                    return (t = Pu({}, r, 0))['scale'] = e['v3'](1, 1, 1), t;
+                }['apply']())['start'](), Zt += Xt;
+            }
+        if (d['iceCount'] > 0) {
+            for (var nn = [], rn = I; rn < this['calculatedInfo']['length']; rn++)
+                this['calculatedInfo'][rn]['pos'][St] <= this['_cMaxY'] - 400 && nn['push'](rn);
+            if (nn['length'] > 0)
+                for (var en = 0; en < d['iceCount'] && !(nn['length'] <= 0); en++) {
+                    var an, un, sn, on;
+                    an = nn[on = c['inst']['RandomInt'](0, nn['length'] - 1)], nn['splice'](on, 1), un = this['calculatedInfo'][an]['pos'], sn = Math['floor'](Math['abs'](un[St] - c['inst']['stopDownY']) / (this['_cMaxY'] - c['inst']['stopDownY']) * this['calculatedInfo']['length'] * 0.5) + c['inst']['RandomInt'](0, 5), this['calculatedInfo'][an]['type'] = 1, this['calculatedInfo'][an]['unlockNum'] = sn;
+                }
+        }
+    }
+    if (b = this['calculatedInfo']['length'], d['holeItemTypeArr']['length'])
+        for (var cn = 0; cn < d['holeItemTypeArr']['length']; cn++)
+            b += d['holeItemTypeArr'][cn]['length'];
+    return function () {
+        var t, n, r = to, i = 'info', e = 'totalNum';
+        return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['info'] = d, n['totalNum'] = b, n;
+    }['apply']();
+}
+
+=== initItems | game.js:49 | UTF16 [687962, 690066) ===
+function (t, n, r, i, a, o, c) {
+    var f = to, h = ro, v = f[2], l = f[5], b = f[4], d = f[3], k = 270, m = 400, p = 180, g = 450, y = 130, w = 670, _ = 'MoveDirection', M = 'length', S = 'push', A = 'shuffleArray', C = 'getPt', x = 'parts', T = 'getPos', L = 'calculatedInfo', I = 'radius', R = 'scale', E = 'v2';
+    switch (void 0 === c && (c = -1), a) {
+    case u['MoveDirection']['DOWN']:
+        for (var D = [], N = 0; N < n['length']; N++)
+            for (var P = n[N], G = r[N], O = 0; O < G; O++)
+                D['push'](P);
+        this['shuffleArray'](D);
+        for (var F = 0; F < D['length']; F++) {
+            for (var B, z = D[F], U = this['getPt'](z), H = 0; 0 === this['parts'][H]['length'];)
+                H++;
+            B = this['getPos'](this['calculatedInfo'], U['radius'] * U['scale'], 0, i), this['calculatedInfo']['push'](new s(z, B, 0, U['radius'], U['scale']));
+        }
+        break;
+    case u['MoveDirection']['RIGHT']:
+        for (var V = [], W = 0; W < n['length']; W++)
+            for (var J = n[W], j = r[W], q = 0; q < j; q++)
+                V['push'](J);
+        this['shuffleArray'](V);
+        for (var K = 0; K < V['length']; K++) {
+            for (var Y, X = V[K], Z = this['getPt'](X), Q = 0; 0 === this['parts'][Q]['length'];)
+                Q++;
+            Y = this['getPos2'](Z['radius'] * Z['scale'], 0, i, Q, Q), this['calculatedInfo']['push'](new s(X, Y, 0, Z['radius'], Z['scale']));
+        }
+        break;
+    case u['MoveDirection']['LEFT']:
+        for (var $ = [], tt = 0; tt < n['length']; tt++)
+            for (var nt = n[tt], rt = r[tt], it = 0; it < rt; it++)
+                $['push'](nt);
+        this['shuffleArray']($);
+        for (var et = 0; et < $['length']; et++) {
+            for (var at, ut = $[et], st = this['getPt'](ut), ot = 0; 0 === this['parts'][ot]['length'];)
+                ot++;
+            at = this['getPos3'](st['radius'] * st['scale'], 0, i, ot, ot), this['calculatedInfo']['push'](new s(ut, at, 0, st['radius'], st['scale']));
+        }
+        break;
+    case u['MoveDirection']['NONE']:
+        for (var ct = [], ft = 0; ft < n['length']; ft++)
+            for (var ht = n[ft], vt = r[ft], lt = 0; lt < vt; lt++)
+                ct['push'](ht);
+        this['shuffleArray'](ct);
+        var bt = [];
+        if (2 == c)
+            bt['push'](e['v2'](-k, m)), bt['push'](e['v2'](k, m));
+        else if (3 == c) {
+            var dt;
+            2 == (dt = t / 10 % 10) ? (bt['push'](e['v2'](-k, p)), bt['push'](e['v2'](k, p)), bt['push'](e['v2'](0, g))) : 3 == dt ? (bt['push'](e['v2'](-k, g)), bt['push'](e['v2'](k, g)), bt['push'](e['v2'](0, p))) : 4 == dt ? (bt['push'](e['v2'](0, y)), bt['push'](e['v2'](0, m)), bt['push'](e['v2'](0, w))) : 5 == dt ? (bt['push'](e['v2'](-k, m)), bt['push'](e['v2'](k, m)), bt['push'](e['v2'](0, m))) : 6 == dt ? (bt['push'](e['v2'](-k, y)), bt['push'](e['v2'](k, w)), bt['push'](e['v2'](0, m))) : 7 == dt && (bt['push'](e['v2'](-k, w)), bt['push'](e['v2'](k, y)), bt['push'](e['v2'](0, m)));
+        } else if (4 == c) {
+            var kt;
+            8 == (kt = t / 10 % 10) ? (bt['push'](e['v2'](-k, m)), bt['push'](e['v2'](k, m)), bt['push'](e['v2'](0, m)), bt['push'](e['v2'](0, y))) : 9 == kt ? (bt['push'](e['v2'](-k, m)), bt['push'](e['v2'](k, m)), bt['push'](e['v2'](0, w)), bt['push'](e['v2'](0, y))) : 0 == kt && (bt['push'](e['v2'](-k, w)), bt['push'](e['v2'](k, w)), bt['push'](e['v2'](0, m)), bt['push'](e['v2'](0, y)));
+        }
+        for (var mt = 0; mt < ct['length']; mt++) {
+            var pt, gt, yt;
+            if (gt = ct[mt], pt = this['getPt'](gt), this['calculatedInfo']['length'] < c)
+                bt[mt][At] *= 0.695, bt[mt][St] *= 0.695, this['calculatedInfo']['push'](new s(gt, bt[mt], 0, pt['radius'], pt['scale']));
+            else
+                yt = this['getPos'](this['calculatedInfo'], pt['radius'] * pt['scale'], 0, i), this['calculatedInfo']['push'](new s(gt, yt, 0, pt['radius'], pt['scale']));
+        }
+    }
+}
+
+=== shuffleArray | game.js:49 | UTF16 [695065, 695173) ===
+function (t) {
+    for (var n = to[4], r = t['length'] - 1; r > 0; r--) {
+        var i, e;
+        i = [
+            t[e = this['random'](0, r)],
+            t[r]
+        ], t[r] = i[0], t[e] = i[1];
+    }
+}
+
+=== getExptInfoSync | game.js:49 | UTF16 [779216, 779894) ===
+function () {
+    var t, n = to, r = n[13], i = n[4], e = 'platform', a = 'getIns', u = 'InitCf';
+    if ((t = this['platform']()) && this['platform']() != window['tt']) {
+        var s;
+        if (s = t['getExptInfoSync']())
+            for (var o in s)
+                y(o, s[o]), 'expt_1779248773' == o && (0 == s[o] ? p['getIns']()['InitCf'](1) : p['getIns']()['InitCf'](2));
+        t['getGameExptInfo'](function () {
+            var t, n = to, r = n[5];
+            return (t = function () {
+                var t, n, r = to[5], i = 'keyList', e = 'success';
+                return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['keyList'] = 0, n['success'] = 0, n;
+            }['apply']())['keyList'] = [], t['success'] = function (t) {
+                var n = to;
+                t['list']['forEach'](function (t) {
+                    var n = to, r = ro, i = n[2], e = n[4], a = 'expt_id', u = 'param_value', s = 'getIns', o = 'InitCf';
+                    y('实验ID:', t['expt_id']), y('参数名:', t['param_name']), y('参数值:', t['param_value']), t['param_value'], 24 == t['expt_id'] && (0 == t['param_value'] ? p['getIns']()['InitCf'](1) : p['getIns']()['InitCf'](2)), 27 == t['expt_id'] && (0 == t['param_value'] ? p['getIns']()['InitCf'](1) : p['getIns']()['InitCf'](2));
+                });
+            }, t;
+        }['apply']());
+    }
+}
+
+=== overFun | game.js:43 | UTF16 [272691, 272843) ===
+function (t) {
+    var n = to, r = 'gameMgr';
+    B['inst']['setUndergoLv'](!0), this['fullTip'](t), this['closeViewTime'](), j['gameMgr']['gameState'] = z['isOver'], j['gameMgr']['onGameOver'](H['LAYER_LOSE_FULL']);
+}
+
+=== setUndergoLv | game.js:49 | UTF16 [602825, 602888) ===
+function (t) {
+    var n = to, r = n[10];
+    i['localStorage']['setItem']('undergoLvnew', t ? Ne : it);
+}
+
+=== getUndergoLv | game.js:49 | UTF16 [602899, 602965) ===
+function () {
+    var t = to, n = t[10];
+    return Ne === i['localStorage']['getItem']('undergoLvnew');
+}
+
+=== canPopupSlotItem | game.js:49 | UTF16 [714603, 714648) ===
+function (t) {
+    return !(this['hasPopupSlotItem'] || t <= 0.5);
+}
+
+=== addDeathScore | game.js:49 | UTF16 [714283, 714365) ===
+function () {
+    var t = to, n = 'score';
+    this['score'] += 1, e('死亡奖励分数加1\uFF0C当前分数', this['score']), this['saveToCache']();
+}
+
+=== addAdScore | game.js:49 | UTF16 [714376, 714458) ===
+function () {
+    var t = to, n = 'score';
+    this['score'] += 1, e('广告奖励分数加1\uFF0C当前分数', this['score']), this['saveToCache']();
+}
+
+=== getReduceFruitTypeCount | game.js:49 | UTF16 [714473, 714593) ===
+function () {
+    var t, n = to, r = 'score';
+    return t = Math['floor'](this['score'] / 10), e('水果种类减少数量', t, '当前分数', this['score']), Math['min'](t, 5);
+}
+
+=== checkID | game.js:43 | UTF16 [232590, 234033) ===
+function (t) {
+    var n, r, i = to, a = i[4], u = i[1], s = i[3], o = i[10], c = i[2], f = i[6], v = i[12], l = i[7], b = i[15], d = 'ins', k = 'node', m = 'originPos', p = 'hitFruits', g = 'isCanCheck', y = 'ID', w = 'isInSlot', _ = 'isBind', M = 'isColliderSlotFruit', S = 'fruitRigidbody', A = 'isJoint', x = 'instance', E = 'jointGearMgr', D = 'removeRopeByFruit', N = 'addInSlotFruit', P = 'setLastTouchFruit';
+    if (n = this, !this['isNoLg'] && T['ins']['status'] != L['UNRUN'])
+        if (r = t['getComponent'](e)) {
+            var G, O, F, B, z;
+            if (O = t['uuid'], (B = (z = this['node']['position'])[At] - this['originPos'][At]) * B + (G = z[St] - this['originPos'][St]) * G >= this['hitSoundDistSq'] && !this['hitFruits']['has'](O) && (this['hitFruits']['add'](O), this['hitPower'](), R['ins']['play'](I['GAME_CLICK'])), F = function () {
+                    var t = to, i = t[12], e = t[13], a = t[10], u = 'isCollider', s = 'ins', o = 'fruitRigidbody', c = 'isJoint', f = 'instance', v = 'jointGearMgr', l = 'removeRopeByFruit', b = 'node', d = 'hideCollider';
+                    n['isCollider'] || r['isCollider'] || T['ins']['status'] != L['UNRUN'] && (n['fruitRigidbody']['linearVelocity'] = h['v2'](0, 0), n['fruitRigidbody']['angularVelocity'] = 0, n['isCollider'] = !0, r['isCollider'] = !0, n['isJoint'] && C['instance']['jointGearMgr']['removeRopeByFruit'](n['node']), r['isJoint'] && C['instance']['jointGearMgr']['removeRopeByFruit'](r['node']), n['hideCollider'](function () {
+                        var t = to;
+                        C['instance']['fruitTween'](n, null, !0);
+                    }), r['hideCollider'](function () {
+                        var t = to;
+                        C['instance']['fruitTween'](r);
+                    }), R['ins']['playComboSound'](), C['instance']['lineOpacity'](), C['instance']['setLastTouchFruit'](n, !0), C['instance']['onEliminatePair']());
+                }, this['isCanCheck'] && r['isCanCheck'] && this['ID'] == r['ID'])
+                return void F();
+            if (!r['isInSlot'] && !this['isInSlot'])
+                return;
+            if (this['ID'] == r['ID'] && !this['isBind'] && !r['isBind'])
+                return void F();
+            if (r['isInSlot'] && !this['isInSlot'] && !this['isBind'])
+                return this['isColliderSlotFruit'] || (this['fruitRigidbody']['linearVelocity'] = h['v2'](0, 0), this['isColliderSlotFruit'] = !0), this['fruitRigidbody']['angularVelocity'] = 0, this['isJoint'] && C['instance']['jointGearMgr']['removeRopeByFruit'](this['node']), C['instance']['addInSlotFruit'](this), void C['instance']['setLastTouchFruit'](this, !0);
+        } else
+            switch (t['name']) {
+            case 'dropLeft':
+            case 'dropRight':
+                return void C['instance']['setLastTouchFruit'](this, !0);
+            case 'btnFirstWall':
+            case 'btnSecondWall':
+            case 'floor':
+                return this['unlockFruit'](), this['isJoint'] && C['instance']['jointGearMgr']['removeRopeByFruit'](this['node']), C['instance']['addInSlotFruit'](this), void C['instance']['setLastTouchFruit'](this, !0);
+            }
+}
+
+=== checkLose | game.js:43 | UTF16 [270998, 271372) ===
+function () {
+    var t, n, r = to, i = 'fruitsInSlotComp', e = 'length';
+    if ((t = this, F['ins']['status'] != U['UNRUN']) && (n = this['fruitsInSlotComp']['length'], this['checkPro50UeseProp'](), n > this['slotsNum'])) {
+        this['overFun']('装不下啦'), S['stopAllByTag'](2);
+        for (var a = function () {
+                    var n = to, r = t['fruitsInSlotComp'][u];
+                    t['scheduleOnce'](function () {
+                        var t = to, n = 100;
+                        r['setRigType'](p['Static']), r['node']['getComponent'](d)['color'] = A(n, n, n);
+                    }, 0);
+                }, u = 0; u < this['fruitsInSlotComp']['length']; u++)
+            a();
+    }
+}
+
+=== checkSlotLose | game.js:43 | UTF16 [270002, 270725) ===
+function () {
+    var t = to, n = t[2], r = 'length', i = 'fruitsInSlotComp', e = 'fruitsComp', u = 'done', s = 'value', o = 'isInSlot', c = 'ID', f = 'overFun', h = '消不掉啦';
+    if (F['ins']['status'] == U['UNRUN'])
+        return !1;
+    if (this['holeComps']['length'] > 0)
+        return !1;
+    if (0 === this['fruitsInSlotComp']['length'])
+        return !1;
+    if (this['fruitsInSlotComp']['length'] >= this['slotsNum'] && !this['canMatchInSlot']()) {
+        for (var v, l = !1, b = a(this['fruitsComp']); !(v = b())['done'];) {
+            var d;
+            if (!(d = v['value'])['isInSlot']) {
+                for (var k, m = a(this['fruitsInSlotComp']); !(k = m())['done'];) {
+                    var p;
+                    if (p = k['value'], d['ID'] === p['ID']) {
+                        l = !0;
+                        break;
+                    }
+                }
+                if (l)
+                    break;
+            }
+        }
+        if (!l)
+            for (var g = 0; g < this['fruitsComp']['length']; g++)
+                if (!this['fruitsComp'][g]['isInSlot']) {
+                    for (var y = g + 1; y < this['fruitsComp']['length']; y++)
+                        if (!this['fruitsComp'][y]['isInSlot'] && this['fruitsComp'][g]['ID'] === this['fruitsComp'][y]['ID']) {
+                            l = !0;
+                            break;
+                        }
+                    if (l)
+                        break;
+                }
+        if (!l)
+            return this['overFun'](h), !0;
+    }
+    if (this['fruitsComp']['length'] != this['fruitsInSlotComp']['length'])
+        return !1;
+    for (var w in this['fruitsComp'])
+        if (!this['fruitsComp'][w]['isTouch'])
+            return !1;
+    return this['overFun'](h), !1;
+}
+
+=== checkWin | game.js:43 | UTF16 [272551, 272679) ===
+function () {
+    var t = to, n = t[4];
+    F['ins']['status'] != U['UNRUN'] && this['fruitRemnantNum'] <= 0 && (j['gameMgr']['gameState'] = z['isPaused'], this['winFun']());
+}
+
+=== breakWall | game.js:43 | UTF16 [263661, 264988) ===
+function (t) {
+    var n, r = to, i = ro, e = r[1], a = r[7], u = r[8], s = 200, o = 35, f = 'ins', h = 'showVideo', v = '空位', l = 'skillIndex', b = 'strTipLab', k = 'LAYER_MAIN';
+    n = this, F['ins']['status'] != U['UNRUN'] ? this['slotsNum'] < 4 ? Y['ins']['showVideo'](function () {
+        var t = to, r = t[7], i = t[8], e = t[1], a = t[0], u = t[9], s = t[4], o = 'btnFirstWall', f = 'EventType', h = 'TOUCH_END', v = 'breakWall', l = 'btnSecondWall', b = 'ins', k = 'children', m = 'active';
+        j['gameMgr']['gameState'] == z['isPlaying'] && (n['slotsNum']++, n['colorLimit']++, n['btnFirstWall'] ? (n['btnFirstWall']['off'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['playChuiziEff'](n['btnFirstWall'], function () {
+            var t = to, r = t[7], i = t[10], e = t[4], a = 'btnFirstWall', u = 'btnSecondWall', s = 'children', o = 'active';
+            n['offButton'](n['btnFirstWall']), n['creatBoxBoom'](n['btnFirstWall']), n['btnFirstWall']['destroy'](), n['btnFirstWall'] = null, n['btnSecondWall']['on'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['btnSecondWall']['getComponent'](d)['spriteFrame'] = X['ins']['getRes'](Z['Sprite'], 'game', n['stoneStrJs']), n['btnSecondWall']['children'][0]['active'] = !0, n['btnSecondWall']['children'][1]['active'] = !0;
+        })) : (n['btnSecondWall']['on'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['btnSecondWall']['getComponent'](d)['spriteFrame'] = X['ins']['getRes'](Z['Sprite'], 'game', n['stoneStrJs']), n['btnSecondWall']['children'][0]['active'] = !0, n['btnSecondWall']['children'][1]['active'] = !0), Q['reportAdRwd']('空位'), F['ins']['status'] = U['RUN']);
+    }, function () {
+    }, v, this, !0) : Y['ins']['showVideo'](function () {
+        var t = to, r = t[7], i = t[1], e = 'btnSecondWall';
+        j['gameMgr']['gameState'] == z['isPlaying'] && (n['slotsNum']++, n['colorLimit']++, n['btnSecondWall'] && (n['btnSecondWall']['off'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['playChuiziEff'](n['btnSecondWall'], function () {
+            var t = to, r = 'btnSecondWall';
+            n['offButton'](n['btnSecondWall']), n['creatBoxBoom'](n['btnSecondWall']), n['btnSecondWall']['destroy'](), n['btnSecondWall'] = null;
+        })), F['ins']['status'] = U['RUN'], Q['reportAdRwd']('空位'));
+    }, function () {
+    }, v, this, !0) : 0 == F['ins']['skillIndex'] ? K['strTipLab']('消除中', H['LAYER_MAIN'], s, o) : 1 == F['ins']['skillIndex'] && K['strTipLab']('刷新中', H['LAYER_MAIN'], s, o);
+}
+
+=== breakAllWall | game.js:43 | UTF16 [265081, 265576) ===
+function () {
+    var t, n, r = to, i = r[11], e = 'btnFirstWall', a = 'btnSecondWall', u = 'playChuiziEff';
+    n = this, t = function () {
+        var t = to, r = t[10], i = t[7], e = 'btnFirstWall', a = 'slotsNum', u = 'colorLimit', s = 'off', o = 'EventType', f = 'TOUCH_END', h = 'breakWall', v = 'offButton', l = 'creatBoxBoom', b = 'destroy', d = 'btnSecondWall';
+        n['isValid'] && (n['btnFirstWall'] && (n['slotsNum']++, n['colorLimit']++, n['btnFirstWall']['off'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['offButton'](n['btnFirstWall']), n['creatBoxBoom'](n['btnFirstWall']), n['btnFirstWall']['destroy'](), n['btnFirstWall'] = null), n['btnSecondWall'] && (n['slotsNum']++, n['colorLimit']++, n['btnSecondWall']['off'](c['EventType']['TOUCH_END'], n['breakWall'], n), n['offButton'](n['btnSecondWall']), n['creatBoxBoom'](n['btnSecondWall']), n['btnSecondWall']['destroy'](), n['btnSecondWall'] = null));
+    }, this['btnFirstWall'] && this['btnSecondWall'] ? this['playChuiziEff'](this['btnFirstWall'], t, new C(0, -50, 0)) : this['btnFirstWall'] ? this['playChuiziEff'](this['btnFirstWall'], t) : this['playChuiziEff'](this['btnSecondWall'], t);
+}
+
+=== btnRemoveFun | game.js:43 | UTF16 [273324, 275194) ===
+function (t, n, r) {
+    var i, e = to, u = e[11], s = e[3], o = 'isDowning', c = 'size', f = 'forEach';
+    if (i = this, void 0 === r && (r = !1), 0 != this['fruitsComp']['length']) {
+        var h, v, l, b, d, k;
+        if (this['closeViewTime'](), this['sortFruit'](), this['isDowning'] = !0, h = new Set(), l = 0, function () {
+                var n, r, e, u = to, s = u[4], o = u[2], c = 'fruitsInSlotComp', f = 'concat', v = 'done', b = 'value', d = 'arrangeType', k = 'node';
+                if (n = function (n) {
+                        var r, e = to, a = e[1], u = 'has', s = 'add';
+                        return l >= t || !h['has'](n) && (!!(r = i['getMatchFruit'](n)) && !h['has'](r) && (h['add'](n), h['add'](r), ++l >= t));
+                    }, i['fruitsInSlotComp']['length'] > 0)
+                    for (var m, p = []['concat'](i['fruitsInSlotComp'])['reverse'](), g = a(p); !(m = g())['done'] && !n(m['value']););
+                else if (e = i['fruitsComp']['filter'](function (t) {
+                        var n = to;
+                        return t['ID'] > 0 && 0 === t['fruitType'] && !t['holeComp'];
+                    }), r = K['shuffleArray']([]['concat'](e)), 1 == t)
+                    if (1 == i['arrangeType']) {
+                        for (var y, w = r[0]['node'][St], _ = r[0], M = a(r); !(y = M())['done'];) {
+                            var S;
+                            (S = y['value'])['node'][St] < w && (w = S['node'][St], _ = S);
+                        }
+                        n(_);
+                    } else if (3 == i['arrangeType']) {
+                        for (var A, C = r[0]['node'][At], x = r[0], T = a(r); !(A = T())['done'];) {
+                            var L;
+                            (L = A['value'])['node'][At] < C && (C = L['node'][At], x = L);
+                        }
+                        n(x);
+                    } else if (2 == i['arrangeType']) {
+                        for (var I, R = r[0]['node'][At], E = r[0], D = a(r); !(I = D())['done'];) {
+                            var N;
+                            (N = I['value'])['node'][At] > R && (R = N['node'][At], E = N);
+                        }
+                        n(E);
+                    } else
+                        for (var P, G = a(r); !(P = G())['done'] && !n(P['value']););
+                else
+                    for (var O, F = a(r); !(O = F())['done'] && !n(O['value']););
+            }(), function () {
+                var n = to, r = n[4], e = n[1], u = n[7], s = n[14], o = 'fruitsInSlotComp', c = 'curHoleFruitTyes';
+                if (!(l >= t))
+                    for (var f = i['fruitsInSlotComp']['length'] - 1; f >= 0; f--) {
+                        var v;
+                        if (v = i['fruitsInSlotComp'][f], !h['has'](v))
+                            for (var b, d = a(i['holeComps']); !(b = d())['done'];) {
+                                var k, m;
+                                if (-1 !== (m = (k = b['value'])['curHoleFruitTyes']['indexOf'](v['ID'])))
+                                    return k['curHoleFruitTyes']['splice'](m, 1), k['upHoleLa'](), k['checkRecycle'](), h['add'](v), i['fillLight'](), void l++;
+                            }
+                    }
+            }(), d = 2 * t, h['size'] > d)
+            k = Array['from'](h)['slice'](0, d), h['clear'](), k['forEach'](function (t) {
+                return h['add'](t);
+            });
+        if (0 === h['size'])
+            return this['isDowning'] = !1, this['startViewTime'](), void (n && n());
+        for (var m = 0; m < l; m++)
+            this['onEliminatePair']();
+        v = 0, b = h['size'], h['forEach'](function (t) {
+            var e = to;
+            t['hideCollider'](), t['isTouch'] = !0, r && t['streakFun'](), i['fruitTween'](t, function () {
+                var t = to, r = t[7], e = 'arrangeType';
+                ++v >= b && (n && n(), i['startViewTime'](), i['isDowning'] = !1, 1 === i['arrangeType'] ? i['fruitDown']() : 2 !== i['arrangeType'] && 3 !== i['arrangeType'] || i['fruitMove'](!0));
+            });
+        });
+    }
+}
+
+=== breakIceFun | game.js:43 | UTF16 [282131, 282337) ===
+function () {
+    var t, n = to, r = 'iceComps', i = 'length', e = 'isBreaking';
+    if (t = this, !(this['iceComps']['length'] <= 0 || this['isBreaking'])) {
+        this['isBreaking'] = !0;
+        for (var a = 0; a < this['iceComps']['length']; a++)
+            this['iceComps'][a]['iceBox']();
+        this['scheduleOnce'](function () {
+            t['isBreaking'] = !1;
+        }, 0.01);
+    }
+}
+
+=== iceBox | game.js:43 | UTF16 [228272, 228380) ===
+function () {
+    var t = to, n = 'iceCounts';
+    1 == this['fruitType'] && (this['iceCounts']--, this['iceCounts'] <= 0 ? this['unlockFruit']() : this['upIceLa']());
+}
+
+
+=== start | game.js:43 | UTF16 [251435, 252067) ===
+function () {
+    var t, n = to, r = n[5], i = n[7], e = n[12], a = n[10], u = n[11], s = n[4], o = n[8], c = 'ins', f = 'fakeGame_level', h = 'active';
+    t = this, j['gameMgr']['gameState'] = z['isPlaying'], ot('```````````````````````````````', F['ins']['fakeGame_level']), this['boundaryLine']['getComponent'](v)['updateAlignment'](), this['dirtectionTip']['active'] = !1, this['levelBg']['getChildByName']('img')['active'] = !1, this['isSpecialProp_'] = F['ins']['fakeGame_level'] > 1 && B['inst']['getUndergoLv'](), this['reliveCount'] = 1, F['ins']['skillIndex'] = -1, this['curThemeType'] = F['ins']['useSkinId'], J['_GbzMainLayer']['refesh'](), F['ins']['status'] = U['UNRUN'], this['colorLoop'](), this['changeThemeBG'](), this['getImgFill'](), this['initLevel'](function (n) {
+        var r, i = to;
+        t['init'](), r = 0, n && (t['blitzkrieg'](), r = 0.5), t['scheduleOnce'](function () {
+            var n = to, r = n[4];
+            t['isSpecialProp_'] && j['uiMgr']['toggle'](H['LAYER_Prop_Special'], !0, null, Math['random']() > 0.5 ? 1 : 0);
+        }, r);
+    });
+}
+
+=== initLevel | game.js:43 | UTF16 [252078, 254027) ===
+function (t) {
+    var n, r = to, i = ro, e = r[7], a = r[1], u = r[2], s = r[6], o = r[13], c = r[10], f = r[21], l = r[5], b = r[12], d = r[8], k = r[9], m = r[4], g = r[11], y = 'inst', w = 'node', _ = 'middleBox', M = 'active', S = 'currentLevel', A = 'ins', C = 'arrangeType', x = 'fruitTotalNum', T = 'fruitRemnantNum', L = 'updateFruitText', I = 'setTip', R = 'initWall', E = 'fruitConfig', D = 'moveDir', N = 'MoveDirection', O = 'woodenObs', B = '_GbzMainLayer', z = 'showAnim';
+    if (n = this, this['bgMoveDis']['set'](h['v2'](0, 0)), et['inst']['resetSlotItemPopuped'](), this['gameRoot'][St] = 0, this['showGameMoveAni'](!0), this['node']['getComponent'](v)['updateAlignment'](), this['node']['getComponentsInChildren'](v)['forEach'](function (t) {
+            t['updateAlignment']();
+        }), this['getedFruitList'] = [], this['setCollisionMgr'](!1), this['middleBox']['node']['active'] = !1, this['currentLevel'] = F['ins']['game_level'], ft['inst']['Level_Enter'](F['ins']['fakeGame_level']), 1 == this['currentLevel'])
+        this['arrangeType'] = 1, this['clickCount'] = 0, this['fruitTotalNum'] = 12, this['fruitRemnantNum'] = this['fruitTotalNum'], this['updateFruitText'](!0), this['setTip'](), this['initWall'](0), this['firstLevel'](function () {
+            var r = to, i = r[2], e = r[11], a = 'fruitsComp';
+            for (var u in (n['setCollisionMgr'](!0), t && t(), n['hideWall'](), n['fruitsComp']))
+                n['fruitsComp'][u]['setRigType'](p['Static']);
+            K['emit'](at['CreateFruitEd']), ft['inst']['TutorialStart']();
+        });
+    else {
+        var U, H;
+        switch (H = P['inst']['genLvMapData'](this['currentLevel'], this['boundaryLine'][St], this['stakeRoot'], this['obstaclesRoot']), this['fruitConfig'] = H['info'], this['fruitConfig']['moveDir']) {
+        case G['MoveDirection']['NONE']:
+            this['arrangeType'] = 0;
+            break;
+        case G['MoveDirection']['DOWN']:
+            this['arrangeType'] = 1;
+            break;
+        case G['MoveDirection']['RIGHT']:
+            this['arrangeType'] = 2;
+            break;
+        case G['MoveDirection']['LEFT']:
+            this['arrangeType'] = 3;
+        }
+        this['initWall'](this['fruitConfig']['moveDir']), this['fruitConfig']['woodenObs'] > 0 && (6 == this['fruitConfig']['woodenObs'] ? this['setLeftAndRightBoxWidth'](345) : 2 == this['fruitConfig']['woodenObs'] && (this['middleBox']['node']['setPosition'](0, 100), this['middleBox']['node']['active'] = !0)), this['fruitTotalNum'] = H['totalNum'], this['fruitRemnantNum'] = this['fruitTotalNum'], this['updateFruitText'](!0), this['setTip'](), U = function () {
+            var r = to;
+            P['inst']['genLvMap'](function () {
+                var r = to;
+                n['scheduleOnce'](function () {
+                    var r = to, i = r[7], e = r[2], a = r[8], u = 'fruitConfig', s = 'woodenObs', o = 'jointGearMgr';
+                    n['fruitConfig']['woodenObs'] > 0 && (6 == n['fruitConfig']['woodenObs'] ? n['setLeftAndRightBoxWidth'](200) : 2 == n['fruitConfig']['woodenObs'] && (n['middleBox']['node']['active'] = !1)), n['sortFruit'](), n['jointGearMgr']['init'](n['jointGraphics']), n['jointGearMgr']['mapCreateJoint'](n['fruitsComp'], n['fruitConfig']['itemConnet'], function () {
+                        var r = to;
+                        n['scheduleOnce'](function () {
+                            var r = to, i = r[11];
+                            n['setCollisionMgr'](!0), J['_GbzMainLayer']['showlightning'](function (n) {
+                                t && t(n);
+                            });
+                        }, 0), n['hideWall']();
+                    }), n['hideWall']();
+                }, 1), K['emit'](at['CreateFruitEd']);
+            });
+        }, 2 == this['currentLevel'] ? J['_GbzMainLayer']['showAnim'](0, function () {
+            U();
+        }) : (U(), J['_GbzMainLayer']['showAnim'](1, function () {
+            var t = to;
+            n['arrangeType'] > 1 && (n['levelBg']['getChildByName']('img')['active'] = !0);
+        }, this['arrangeType'], this['levelBg']['getChildByName']('img')));
+    }
+}
+
+=== winFun | game.js:43 | UTF16 [272854, 273314) ===
+function (t) {
+    var n = to, r = n[2], i = n[10], e = n[5], u = n[4], s = n[8], o = n[3], c = n[13], f = n[12], h = 'inst', v = 'active', l = 'getedFruitList', b = 'FruitDownLayer';
+    if (void 0 === t && (t = !1), $['ins']['addScore']($['SCORE_CLEAR']), B['inst']['setUndergoLv'](!1), this['topWall']['active'] = !1, this['closeViewTime'](), et['inst']['resetForNewLevel'](), t)
+        for (var d, k = []['concat'](this['fruitsComp']), m = a(k); !(d = m())['done'];) {
+            var p;
+            p = d['value'], this['getedFruitList']['push'](p['calculatedInfo_']), this['recycleFruit'](p);
+        }
+    j['uiMgr']['toggle'](H['LAYER_MAIN'], !1), this['showGameMoveAni'](), this['FruitDownLayer']['node']['active'] = !0, this['FruitDownLayer']['showAni'](this['getedFruitList']), this['recycle']();
+}
+
+=== videoClick | game.js:43 | UTF16 [381860, 382428) ===
+function () {
+    var t, n = to, r = n[2], i = 'ins';
+    t = this, c['ins']['play'](b['GAME_CLICK']), v['ins']['showVideo'](function () {
+        var n = to, r = n[4], i = n[7], e = n[3], a = n[10], u = n[1], s = 'instance', o = 'node', c = 'startViewTime', v = 'ins', b = 'status', p = 'RUN';
+        if (l['instance'] && l['instance']['node'] && l['instance']['node']['active'] && h['gameMgr']['gameState'] == d['isPlaying'])
+            switch (h['uiMgr']['toggle'](k['LAYER_Prop_Special'], !1), t['type_']) {
+            case 0:
+                l['instance']['breakAllWall'](), l['instance']['startViewTime'](), f['ins']['status'] = m['RUN'];
+                break;
+            case 1:
+                f['ins']['status'] = m['UNRUN'], l['instance']['btnRemoveFun'](6, function () {
+                    var t = to, n = t[1];
+                    f['ins']['status'] = m['RUN'], l['instance']['startViewTime']();
+                });
+                break;
+            case 2:
+                l['instance']['breakSingleWall'](), l['instance']['startViewTime'](), f['ins']['status'] = m['RUN'];
+            }
+    }, function (t) {
+    }, '特殊道具', this, !0);
+}
+
+=== electricShock | game.js:43 | UTF16 [236081, 237011) ===
+function () {
+    var t, n, r = to, i = ro, e = r[3], a = r[7], u = 255, s = 'node', o = 'to', v = 'apply';
+    n = this, this['fruitRigidbody']['group'] = M['RB_GROUPS']['clickFruit'], this['isTouch'] = !0, this['holeComp'] || (this['fallStartPos_'] = h['v2'](this['node'][At], this['node'][St])), this['breakHole'](), (t = this['node']['getComponent'](c)) && (t['color'] = f(u, u, u, u)), g['stopAllByTarget'](this['node']), m(this['node'])['repeat'](1, m(this['node'])['to'](0.1, function () {
+        var t, n = to[3];
+        return (t = function () {
+            var t, n = 'angle';
+            return (t = Pu({}, n, 0))['angle'] = 0, t;
+        }['apply']())['angle'] = 15, t;
+    }['apply']())['to'](0.1, function () {
+        var t, n = to[3];
+        return (t = function () {
+            var t, n = 'angle';
+            return (t = Pu({}, n, 0))['angle'] = 0, t;
+        }['apply']())['angle'] = -15, t;
+    }['apply']())['to'](0.1, function () {
+        var t, n = to[3];
+        return (t = function () {
+            var t, n = 'angle';
+            return (t = Pu({}, n, 0))['angle'] = 0, t;
+        }['apply']())['angle'] = 15, t;
+    }['apply']())['to'](0.1, function () {
+        var t, n = to[3];
+        return (t = function () {
+            var t, n = 'angle';
+            return (t = Pu({}, n, 0))['angle'] = 0, t;
+        }['apply']())['angle'] = 0, t;
+    }['apply']()))['call'](function () {
+        var t = to;
+        n['setRigType'](d['Dynamic'], n['gravityScale']);
+    })['start']();
+}
+
+=== blitzkrieg | game.js:43 | UTF16 [288921, 289243) ===
+function () {
+    var t = to, n = ro, r = t[1], i = t[2], e = t[6], a = 20, u = 'fruitsComp', s = 'length', o = 'inst', c = 'RandomInt';
+    tt['ins']['play'](V['lei']);
+    for (var f = Math['floor'](this['fruitsComp']['length'] / 13), h = [], v = 0; v < f; v++) {
+        for (var l = D['inst']['RandomInt'](a, this['fruitsComp']['length'] - 1); h['includes'](l) || this['fruitsComp'][l]['node']['position'][St] < 300;)
+            l = D['inst']['RandomInt'](a, this['fruitsComp']['length'] - 1);
+        h['push'](l), this['fruitsComp'][l]['electricShock']();
+    }
+}
+
+=== SetCurLv | game.js:43 | UTF16 [304565, 304721) ===
+function (t) {
+    var n = to, r = n[12], i = 'game_level', a = 'localStorage', u = 'setItem';
+    this['game_level'] = t, this['fakeGame_level'] = t, e['localStorage']['setItem']('ZXMTG_Test_GAME_CACHE_gameLv', this['game_level']), e['localStorage']['setItem']('ZXMTG_Test_GAME_CACHE_curLvChallengeNum', this['challengeCount']), this['store']();
+}
+
+=== AddCurLv | game.js:43 | UTF16 [304732, 304890) ===
+function (t) {
+    var n = to, r = n[12], i = 'game_level', a = 'localStorage', u = 'setItem';
+    this['game_level'] += t, this['fakeGame_level'] += t, e['localStorage']['setItem']('ZXMTG_Test_GAME_CACHE_gameLv', this['game_level']), e['localStorage']['setItem']('ZXMTG_Test_GAME_CACHE_curLvChallengeNum', this['challengeCount']), this['store']();
+}
+
+=== getMatchFruit | game.js:43 | UTF16 [275272, 275904) ===
+function (t) {
+    for (var n, r, i, e = to, u = e[8], s = e[3], o = e[2], c = e[15], f = e[10], h = 'ID', v = 'fruitType', l = 'isJoint', b = 'push', d = 'holeComp', k = 'node', m = 'length', p = 'eliminateDataSort', g = 'jointGearMgr', y = 'removeRopeByFruit', w = 'hideCollider', _ = 'unlockFruit', M = [], S = [], A = [], C = [], x = [], T = a(this['fruitsComp']); !(i = T())['done'];) {
+        var L;
+        (L = i['value']) === t || L['isCollider'] || L['ID'] !== t['ID'] || (0 === L['fruitType'] ? L['isJoint'] ? S['push'](L) : L['holeComp'] && 0 !== L['node']['scale'][At] ? A['push'](L) : M['push'](L) : 1 === L['fruitType'] ? C['push'](L) : 2 === L['fruitType'] && x['push'](L));
+    }
+    return r = null, (n = M['concat'](S))['length'] > 0 ? (this['eliminateDataSort'](n, !0), r = n[0], this['jointGearMgr']['removeRopeByFruit'](r['node']), r['hideCollider']()) : A['length'] > 0 ? (this['eliminateDataSort'](A), (r = A[0])['hideCollider'](), r['holeComp']['genFruit']()) : C['length'] > 0 ? (this['eliminateDataSort'](C), (r = C[0])['hideCollider'](), r['unlockFruit']()) : x['length'] > 0 && (this['eliminateDataSort'](x), (r = x[0])['hideCollider'](), r['unlockFruit']()), r && t['isJoint'] && this['jointGearMgr']['removeRopeByFruit'](t['node']), r;
+}
+
+=== eliminateDataSort | game.js:43 | UTF16 [275915, 276215) ===
+function (t, n) {
+    var r, i = to;
+    r = this, void 0 === n && (n = !1), P['inst']['bubbleSort'](t, function (t, i) {
+        var e, a = to, u = a[2], s = 'isTouch', o = 'arrangeType', c = 'node', f = 'inst', h = 'halfGameW';
+        return !(!i['isTouch'] || !n) || (0 == r['arrangeType'] || 1 == r['arrangeType'] ? i['node'][St] < t['node'][St] : (2 == r['arrangeType'] || 3 == r['arrangeType']) && (e = i['node'][At], n ? !t['isTouch'] && e > -D['inst']['halfGameW'] && e < D['inst']['halfGameW'] : e > -D['inst']['halfGameW'] && e < D['inst']['halfGameW']));
+    });
+}
+
+=== GbzPropSpecialLayer.onClose | game.js:43 | UTF16 [382441, 382556) ===
+function () {
+    var t = to;
+    c['ins']['play'](b['GAME_CLICK']), h['uiMgr']['toggle'](k['LAYER_Prop_Special'], !1), l['instance']['startViewTime']();
+}
+
+=== GbzSdkManager.showVideo | game.js:43 | UTF16 [409769, 410918) ===
+function (t, n, r, i, e) {
+    var s, c, h = to, v = h[6], b = h[9], d = 'ins', k = 'platformApi';
+    if (s = this, void 0 === e && (e = !1), c = function () {
+            var e = to, a = 'platformApi', u = 'inst', c = '模拟成功\uFF0C激励奖励已发放';
+            return s['platformApi'] ? s['platformApi'] && s['platformApi']['freead'] ? t && t(c) : void s['platformApi']['showVideo'](t, function () {
+                var t = to, r = 'ins';
+                y['ins']['status'] = f['RUN'], g['ins']['resumeBGM'](), n && n();
+            }, M, r, i) : (S['inst']['Ad_Impression'](1), S['inst']['Ad_Placement_show'](r), S['inst']['Ad_Placement_Click'](r), S['inst']['Video_Finish'](r), S['inst']['AddDayAdClickNum'](r, 1), S['inst']['AddDayAdShowNum'](r, 1), M && M['ins']['show'](c, function () {
+                var t, n = to, r = ro;
+                return (t = function () {
+                    var t, n, r = to, i = 'gravity', e = 'bg_color';
+                    return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['gravity'] = 0, n['bg_color'] = 0, n;
+                }['apply']())['gravity'] = 'CENTER', t['bg_color'] = o(226, 69, 109, 255), t;
+            }['apply']()), t && t(c));
+        }, u['platform'] == u['Platform']['WECHAT_GAME'])
+        if (y['ins']['isVideo2Share']() && e) {
+            if (y['ins']['AddShareNum'](), p['emit'](l['shareClick']), this['platformApi'] && this['platformApi']['freead'])
+                return t && t('模拟成功\uFF0C激励奖励已发放');
+            a['ins']['activeShare'](null, function () {
+                var n = to;
+                a['ins']['showToast'](function () {
+                    var t, n = to, r = n[3], i = n[2];
+                    return (t = function () {
+                        var t, n, r = to, i = 'title', e = 'icon', a = 'duration';
+                        return Pu(t = {}, i, 0), Pu(t, e, 0), Pu(t, a, 0), (n = t)['title'] = 0, n['icon'] = 0, n['duration'] = 0, n;
+                    }['apply']())['title'] = '分享成功', t['icon'] = 'success', t['duration'] = 1000, t;
+                }['apply']()), t();
+            });
+        } else
+            c();
+    else
+        c();
+}

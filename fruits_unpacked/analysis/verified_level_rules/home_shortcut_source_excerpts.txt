@@ -1,0 +1,128 @@
+主界面、加桌与侧边栏：源码摘录
+来源：/Users/bingzhou/Projects/mp-wxapkg-unpacker/fruits_unpacked/__WITHOUT_MULTI_PLUGINCODE__/game.js
+SHA-256：d035c78214f0209ec164dcb5529e064d9b67f044540f4a7dfe65c27cdc706048
+核对：当前主包SHA与既有level_parameters.json记录一致。
+说明：静态替换字符串/数值表别名；UTF16为0-based原始源码位置，未执行游戏或网络。
+
+=== onEnable | game.js:43 | UTF16 [363432, 363743) ===
+function(){
+var t,n=to,r=n[5],i=n[4],e="skills",u="active";
+t=this,this["skills"]=a(e,this["node"]),this["skills"]["active"]=!0,a("Canvas/MAIN/Stage")["active"]=!0,this["refesh"](),this["rendorCurrentLevel"](),k["ins"]["playBGM"](C["GAME_PLAYBGM"]),this["skills"]["children"]["forEach"]((function(n,r){
+var i,e=to;
+i=function(){
+t["onSkillClick"](r)}
+,t["_skillClickHandlers"][r]=i,n["on"]("click",i)}
+))}
+
+
+=== onEnable | game.js:43 | UTF16 [375544, 376188) ===
+function(){
+var t,n,r,i=to,e=i[2],u=i[11],s=i[6],o=i[10],c=i[7],l=i[5],b=i[4],g=i[12],M="getComponent",A="ins",C="game_level",L="gameMgr",I="active",R="levelComp",E="btn_start",D="getChildByName",N="fakeGame_level";
+x["inst"]["HomePage_View"](),t=this["btn_fruitBook"]["children"][2]["getComponent"](f),(r=(m["ins"]["game_level"]-1)/175)>=1&&(r=1),t["fillRange"]=r,p["gameMgr"]["gameState"]=S["isHome"],this["setMainBtnPos"](),this["scheduleOnce"](this["fruitBookShow"],.5),k["ins"]["playBGM"](_["GAME_BGM"]),this["inTime"]=Date["now"](),a("Canvas/MAIN/Stage")["active"]=!1,w["on"](d["backInHome"],this["onCominHomew"],this),p["gameMgr"]["levelComp"]&&(p["gameMgr"]["levelComp"]["active"]=!1),n=this["btn_start"]["getChildByName"]("level")["getChildByName"]("labLevel")["getComponent"](h),T(Nr+m["ins"]["fakeGame_level"]+Pr),T("数据表第"+m["ins"]["game_level"]+Pr),n["string"]=m["ins"]["fakeGame_level"]["toString"](),this["checktt"](),y["ins"]["ttcanluse"](this["btn_request"]),this["btn_start"]["getComponent"](v)["enabled"]=!0,this["themeTip"]()}
+
+
+=== openTTCbl | game.js:43 | UTF16 [376546, 376558) ===
+function(){
+}
+
+
+=== openTTADD | game.js:43 | UTF16 [376569, 376581) ===
+function(){
+}
+
+
+=== openTTRequest | game.js:43 | UTF16 [376591, 376603) ===
+function(){
+}
+
+
+=== checktt | game.js:43 | UTF16 [376614, 376674) ===
+function(){
+var t=to;
+y["ins"]["ttcheckScene"](this["btn_cbl"])}
+
+
+=== onCominHomew | game.js:43 | UTF16 [378128, 378180) ===
+function(){
+var t=to;
+this["inTime"]=Date["now"]()}
+
+
+=== ttrequestFeedSubscribe | game.js:43 | UTF16 [406236, 406304) ===
+function(t){
+var n=to,r="platformApi";
+null!=this["platformApi"]&&this["platformApi"]["requestFeedSubscribe"](t)}
+
+
+=== ttcheckFeedSubscribeStatus | game.js:43 | UTF16 [406317, 406384) ===
+function(t){
+var n=to,r="platformApi";
+null!=this["platformApi"]&&this["platformApi"]["checkFeedSubscribeStatus"](t)}
+
+
+=== ttcanluse | game.js:43 | UTF16 [406395, 406543) ===
+function(t){
+var n=to,r=n[5],i="ins",e="getPlatform",u="active";
+null!=this["platformApi"]&&(a["ins"]["getPlatform"]()==window["tt"]?t["active"]=a["ins"]["getPlatform"]()["canIUse"]("request"):t["active"]=!1)}
+
+
+=== addShortcut | game.js:43 | UTF16 [406628, 407074) ===
+function(t){
+var n=to,r=n[9],i="ins",e="getPlatform";
+null!=this["platformApi"]&&a["ins"]["getPlatform"]()==window["tt"]&&a["ins"]["getPlatform"]()["addShortcut"](function(){
+var n,r=to;
+return(n=function(){
+var t,n,r=to,i="success",e="fail";
+return Pu(t={
+}
+,i,0),Pu(t,e,0),(n=t)["success"]=0,n["fail"]=0,n}
+["apply"]())["success"]=function(){
+var n=to,r=n[4];
+t["getComponent"](s)["spriteFrame"]=w["ins"]["getRes"](_["Sprite"],"secondary","获得奖励"),h["isOnAdd"]=!0}
+,n["fail"]=function(t){
+var n=to[4];
+A("添加桌面失败",t["errMsg"])}
+,n}
+["apply"]())}
+
+
+=== checkShortcut | game.js:43 | UTF16 [407084, 407583) ===
+function(t){
+var n=to,r="ins",i="getPlatform";
+this["platformApi"]&&a["ins"]["getPlatform"]()==window["tt"]&&a["ins"]["getPlatform"]()["checkShortcut"](function(){
+var n,r=to;
+return(n=function(){
+var t,n,r=to,i="success",e="fail";
+return Pu(t={
+}
+,i,0),Pu(t,e,0),(n=t)["success"]=0,n["fail"]=0,n}
+["apply"]())["success"]=function(n){
+var r=to,i=r[4],e="status",a="exist";
+A("检查快捷方式",n["status"]["exist"]),h["isOnAdd"]=n["status"]["exist"],n["status"]["exist"]&&(t["getComponent"](s)["spriteFrame"]=w["ins"]["getRes"](_["Sprite"],"secondary","获得奖励"))}
+,n["fail"]=function(t){
+var n=to;
+A("检查快捷方式失败",t["errMsg"])}
+,n}
+["apply"]())}
+
+
+=== ttcheckScene | game.js:43 | UTF16 [408203, 408668) ===
+function(t){
+var n=to,r="ins",i="getPlatform";
+null!=this["platformApi"]?a["ins"]["getPlatform"]()==window["tt"]&&a["ins"]["getPlatform"]()["checkScene"](function(){
+var n,r=to,i=r[3],e=r[5];
+return(n=function(){
+var t,n,r=to,i="scene",e="success",a="fail";
+return Pu(t={
+}
+,i,0),Pu(t,e,0),Pu(t,a,0),(n=t)["scene"]=0,n["success"]=0,n["fail"]=0,n}
+["apply"]())["scene"]="sidebar",n["success"]=function(n){
+var r=to,i="isExist";
+A("check scene success: ",n["isExist"]),t["active"]=n["isExist"]}
+,n["fail"]=function(n){
+var r=to;
+t["active"]=n["isExist"]}
+,n}
+["apply"]()):t["active"]=!0}
+
+

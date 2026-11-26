@@ -1,0 +1,206 @@
+普通关卡复活与道具限制：静态源码摘录
+来源：/Users/bingzhou/Projects/mp-wxapkg-unpacker/fruits_unpacked/__WITHOUT_MULTI_PLUGINCODE__/game.js
+SHA-256：d035c78214f0209ec164dcb5529e064d9b67f044540f4a7dfe65c27cdc706048
+说明：修正解码47张字符串表、274项数字表；仅替换可解析别名并换行，不执行游戏。原始区间为0-based UTF16字符偏移；保留控制流与分支。
+
+=== start | game.js:43 | UTF16 [251435, 252067) ===
+function(){
+var t,n=to,r=n[5],i=n[7],e=n[12],a=n[10],u=n[11],s=n[4],o=n[8],c="ins",f="fakeGame_level",h="active";
+t=this,j["gameMgr"]["gameState"]=z["isPlaying"],ot("```````````````````````````````",F["ins"]["fakeGame_level"]),this["boundaryLine"]["getComponent"](v)["updateAlignment"](),this["dirtectionTip"]["active"]=!1,this["levelBg"]["getChildByName"]("img")["active"]=!1,this["isSpecialProp_"]=F["ins"]["fakeGame_level"]>1&&B["inst"]["getUndergoLv"](),this["reliveCount"]=1,F["ins"]["skillIndex"]=-1,this["curThemeType"]=F["ins"]["useSkinId"],J["_GbzMainLayer"]["refesh"](),F["ins"]["status"]=U["UNRUN"],this["colorLoop"](),this["changeThemeBG"](),this["getImgFill"](),this["initLevel"]((function(n){
+var r,i=to;
+t["init"](),r=0,n&&(t["blitzkrieg"](),r=.5),t["scheduleOnce"]((function(){
+var n=to,r=n[4];
+t["isSpecialProp_"]&&j["uiMgr"]["toggle"](H["LAYER_Prop_Special"],!0,null,Math["random"]()>.5?1:0)}
+),r)}
+))}
+
+
+=== checkPro50UeseProp | game.js:43 | UTF16 [289257, 289940) ===
+function(){
+var t,n,r,i=to,e=i[10],a="lastTouchFruit",u="ID";
+(t=this,1!=this["currentLevel"])&&(r=this["lastTouchFruit"]["length"]<2?.5:this["lastTouchFruit"][0]&&this["lastTouchFruit"][1]&&this["lastTouchFruit"][0]["ID"]==this["lastTouchFruit"][1]["ID"]?1.5:.5,n=function(){
+var n,r=to,i=r[4],e=r[3],a="fruitsInSlotComp",u="length",s="policeLineFruit",o="fruitTotalNum",c="inst";
+if(t["isValid"]&&F["ins"]["status"]!=U["UNRUN"]&&(n=t["fruitsInSlotComp"]["length"],t["policeLineFruit"]=t["fruitsInSlotComp"][t["fruitsInSlotComp"]["length"]-1],n==t["slotsNum"])){
+var f;
+if(!t["btnFirstWall"]&&!t["btnSecondWall"])return;
+f=(t["fruitTotalNum"]-t["fruitRemnantNum"])/t["fruitTotalNum"],et["inst"]["canPopupSlotItem"](f)&&(et["inst"]["markSlotItemPopuped"](),j["uiMgr"]["toggle"](H["LAYER_Prop_Special"],!0,null,2)),t["policeLineFruit"]=null}
+}
+,this["scheduleOnce"]((function(){
+var r=to,i="lastTouchFruit",e="ID";
+t["isValid"]&&(2==t["lastTouchFruit"]["length"]&&t["lastTouchFruit"][0]&&t["lastTouchFruit"][1]&&t["lastTouchFruit"][0]["ID"]==t["lastTouchFruit"][1]["ID"]?t["scheduleOnce"]((function(){
+n()}
+),1):n())}
+),r))}
+
+
+=== onGameSkill | game.js:43 | UTF16 [342695, 343034) ===
+function(){
+var t=to,n="ins",r="status",i="UNRUN",e="instance";
+if(this["isValid"])switch(l["ins"]["skillIndex"]){
+case 0:l["ins"]["status"]=m["UNRUN"],A["instance"]["btnRemoveFun"](1,(function(){
+var t=to,n="ins";
+l["ins"]["status"]=m["RUN"],l["ins"]["skillIndex"]=-1}
+));
+break;
+case 1:l["ins"]["status"]=m["UNRUN"],A["instance"]["btnDisturbFun"]((function(){
+var t=to,n="ins";
+l["ins"]["status"]=m["RUN"],l["ins"]["skillIndex"]=-1}
+))}
+}
+
+
+=== videoClick | game.js:43 | UTF16 [345516, 346209) ===
+function(){
+var t,n=to,r=n[2],i="ins";
+t=this,c["ins"]["play"](b["GAME_CLICK"]),v["ins"]["showVideo"]((function(){
+var n=to,r=n[4],i=n[7],e=n[3],a="instance",u="node",s="gameMgr",o="ins",c="status",v="UNRUN",b="itemADCounts",p="_gbzMainLayer",g="refreshSkillBtn";
+if(l["instance"]&&l["instance"]["node"]&&l["instance"]["node"]["active"]&&h["gameMgr"]["gameState"]==d["isPlaying"])switch(h["uiMgr"]["toggle"](k["GbzGetItemLayer"],!1),t["type_"]){
+case 0:f["ins"]["status"]=m["UNRUN"],h["gameMgr"]["itemADCounts"][0]--,t["_gbzMainLayer"]["refreshSkillBtn"](),l["instance"]["btnRemoveFun"](1,(function(){
+var t=to,n="ins";
+f["ins"]["status"]=m["RUN"],l["instance"]["startViewTime"](),f["ins"]["skillIndex"]=-1}
+));
+break;
+case 1:f["ins"]["status"]=m["UNRUN"],h["gameMgr"]["itemADCounts"][1]--,t["_gbzMainLayer"]["refreshSkillBtn"](),l["instance"]["btnDisturbFun"]((function(){
+var t=to,n="ins";
+f["ins"]["status"]=m["RUN"],l["instance"]["startViewTime"](),f["ins"]["skillIndex"]=-1}
+))}
+}
+),(function(t){
+}
+),"特殊道具",this,!0)}
+
+
+=== onEnable | game.js:43 | UTF16 [357476, 357837) ===
+function(){
+var t,n=to,r=n[1],i=n[4],e=n[3],a=n[13],u=n[9],o=n[5],c="instance",f="active",h="uiMgr",b="toggle";
+v["ins"]["status"]=p["UNRUN"],this["labNum"]["string"]=m["instance"]["fruitRemnantNum"]["toString"](),this["btn_restart"]["getComponent"](s)["enabled"]=!0,(t=this["node"]["getChildByName"]("img"))&&t["destroy"](),this["panel"]["active"]=!0,this["lose_panel"]["active"]=!1,m["instance"]["reliveCount"]>0?(l["uiMgr"]["toggle"](g["LAYER_LOSE_FULL"],!1),l["uiMgr"]["toggle"](g["GbzResurgenceLayer"],!0)):this["onClose"]()}
+
+
+=== refesh | game.js:43 | UTF16 [362075, 362168) ===
+function(){
+var t=to;
+this["animNodes"]["active"]=!1,g["gameMgr"]["itemADCounts"]=[4,4],this["refreshSkillBtn"]()}
+
+
+=== onSkillClick | game.js:43 | UTF16 [364947, 365621) ===
+function(t){
+var n,r=to,i=ro,e=r[1],a=r[4],u=r[3],s=r[2],o=r[8],c=r[5],f=200,h=35,v="refreshSkillBtn",l="ins",b="skillIndex",d="btnType",m="gameMgr",y="strTipLab",w="LAYER_MAIN";
+(this["refreshSkillBtn"](),p["ins"]["status"]!=x["UNRUN"])?(k["ins"]["play"](C["GAME_CLICK"]),p["ins"]["skillIndex"]=t,n=p["ins"]["getPropNum"](this["btnType"][t]),g["gameMgr"]["itemADCounts"][this["btnType"][t]]<1||(n>0?(p["ins"]["addProp"](this["btnType"][t],-1),g["gameMgr"]["onGameSkill"](),this["refreshSkillBtn"]()):1!=p["ins"]["game_level"]?g["uiMgr"]["toggle"](T["GbzGetItemLayer"],!0,null,function(){
+var n,r=to,i=r[3];
+return(n=function(){
+var t,n,r=to,i="index",e="_GbzMainLayer";
+return Pu(t={
+}
+,i,0),Pu(t,e,0),(n=t)["index"]=0,n["_GbzMainLayer"]=0,n}
+["apply"]())["index"]=t,n["_GbzMainLayer"]=this,n}
+["bind"](this)["apply"]()):M["strTipLab"]("第二关使用",T["LAYER_MAIN"],f,h))):0==p["ins"]["skillIndex"]?M["strTipLab"]("消除中",T["LAYER_MAIN"],f,h):1==p["ins"]["skillIndex"]&&M["strTipLab"]("刷新中",T["LAYER_MAIN"],f,h)}
+
+
+=== videoClick | game.js:43 | UTF16 [381860, 382428) ===
+function(){
+var t,n=to,r=n[2],i="ins";
+t=this,c["ins"]["play"](b["GAME_CLICK"]),v["ins"]["showVideo"]((function(){
+var n=to,r=n[4],i=n[7],e=n[3],a=n[10],u=n[1],s="instance",o="node",c="startViewTime",v="ins",b="status",p="RUN";
+if(l["instance"]&&l["instance"]["node"]&&l["instance"]["node"]["active"]&&h["gameMgr"]["gameState"]==d["isPlaying"])switch(h["uiMgr"]["toggle"](k["LAYER_Prop_Special"],!1),t["type_"]){
+case 0:l["instance"]["breakAllWall"](),l["instance"]["startViewTime"](),f["ins"]["status"]=m["RUN"];
+break;
+case 1:f["ins"]["status"]=m["UNRUN"],l["instance"]["btnRemoveFun"](6,(function(){
+var t=to,n=t[1];
+f["ins"]["status"]=m["RUN"],l["instance"]["startViewTime"]()}
+));
+break;
+case 2:l["instance"]["breakSingleWall"](),l["instance"]["startViewTime"](),f["ins"]["status"]=m["RUN"]}
+}
+),(function(t){
+}
+),"特殊道具",this,!0)}
+
+
+=== onClose | game.js:43 | UTF16 [401247, 401360) ===
+function(){
+var t=to,n="uiMgr",r="toggle";
+h["instance"]["reliveCount"]=0,o["uiMgr"]["toggle"](v["LAYER_LOSE_FULL"],!0),o["uiMgr"]["toggle"](v["GbzResurgenceLayer"],!1)}
+
+
+=== onRelive | game.js:43 | UTF16 [401484, 401934) ===
+function(){
+var t=to,n=t[7],r="ins",i="VideoType";
+u["ins"]["play"](l["GAME_CLICK"]),1===c["ins"]["VideoType"]()?c["ins"]["showVideo"]((function(){
+var t=to,n=t[7],r=t[4],i=t[9],e="instance";
+o["gameMgr"]["gameState"]!=b["isHome"]&&(f["reportAdRwd"]("复活"),o["uiMgr"]["toggle"](v["GbzResurgenceLayer"],!1),h["instance"]["reliveCount"]--,h["instance"]["reviveFun"]())}
+),(function(t){
+}
+),"复活",this):2===c["ins"]["VideoType"]()&&(o["uiMgr"]["toggle"](v["GbzResurgenceLayer"],!1),this["scheduleOnce"]((function(){
+var t=to,n=t[1];
+s["ins"]["status"]=d["RUN"]}
+),.1),h["instance"]["reviveFun"]())}
+
+
+=== VideoType | game.js:43 | UTF16 [412015, 412035) ===
+function(){
+return 1}
+
+
+=== canPopupSlotItem | game.js:49 | UTF16 [714603, 714648) ===
+function(t){
+return!(this["hasPopupSlotItem"]||t<=.5)}
+
+
+=== markSlotItemPopuped | game.js:49 | UTF16 [714662, 714719) ===
+function(){
+var t=to;
+this["hasPopupSlotItem"]=!0,this["saveToCache"]()}
+
+
+=== resetSlotItemPopuped | game.js:49 | UTF16 [714733, 714764) ===
+function(){
+this["hasPopupSlotItem"]=!1}
+
+
+
+=== startViewTime | game.js:43 | UTF16 [287982, 288010) ===
+function(){
+this["isSpecialProp_"]}
+
+
+=== resetViewTimeNum | game.js:43 | UTF16 [288021, 288033) ===
+function(){
+}
+
+
+=== recoverViewTime | game.js:43 | UTF16 [288043, 288055) ===
+function(){
+}
+
+
+=== closeViewTime | game.js:43 | UTF16 [288066, 288078) ===
+function(){
+}
+
+
+=== addViewTime | game.js:43 | UTF16 [288090, 288102) ===
+function(){
+}
+
+
+=== show | game.js:43 | UTF16 [381424, 381847) ===
+function(n){
+var r=to,i=r[2],e=r[4],a=r[3],u="type_",s="titleNodes",o="propIcons",c="active",f="dirLa",h="string";
+t["prototype"]["show"]["call"](this,n),this["type_"]=n;
+for(var v=0;
+v<this["titleNodes"]["length"];
+v++)this["propIcons"][v]&&(this["propIcons"][v]["active"]=!1),this["titleNodes"][v]["active"]=!1;
+switch(this["type_"]){
+case 0:this["propIcons"][0]["active"]=!0,this["titleNodes"][0]["active"]=!0,this["dirLa"]["string"]="解锁所有槽位";
+break;
+case 1:this["propIcons"][1]["active"]=!0,this["titleNodes"][1]["active"]=!0,this["dirLa"]["string"]="消除多组水果";
+break;
+case 2:this["propIcons"][0]["active"]=!0,this["titleNodes"][2]["active"]=!0,this["dirLa"]["string"]="解锁一个槽位"}
+}
+
+
+=== onClose | game.js:43 | UTF16 [382441, 382556) ===
+function(){
+var t=to;
+c["ins"]["play"](b["GAME_CLICK"]),h["uiMgr"]["toggle"](k["LAYER_Prop_Special"],!1),l["instance"]["startViewTime"]()}
+

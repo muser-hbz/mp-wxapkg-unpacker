@@ -1,0 +1,97 @@
+棋子碰撞体运行时证据
+来源：/Users/bingzhou/Projects/mp-wxapkg-unpacker/fruits_unpacked/__WITHOUT_MULTI_PLUGINCODE__/game.js
+SHA256：d035c78214f0209ec164dcb5529e064d9b67f044540f4a7dfe65c27cdc706048
+只替换已核对字符串/数字别名，未执行游戏。
+FruitComp模块中 l=CircleCollider2D，b=PolygonCollider2D。
+胜利展示模块中 d=CircleCollider2D，k=PolygonCollider2D。
+NotCrircles名单：fruit2、fruit4、fruit6、fruit9、fruit17、fruit30。该标志控制入场时是否临时圆形化，不直接代表最终形状。
+
+=== init | game.js:43 | UTF16 [221596, 223192) ===
+function (t, n, r, i) {
+    var e, a, u, s = to, o = s[6], f = s[5], v = s[9], k = s[2], m = s[10], p = s[7], g = s[11], y = s[0], w = s[8], _ = 'isCircle', M = 'node', S = 'getComponent', A = 'enabled', C = 'calculatedInfo_', x = 'radius', T = 'fruitType', L = 'pos', I = 'polygonInfo', R = 'apply', E = 'squeezeCircle';
+    (e = this, this['isCircle'] = -1 == P['gameMgr']['NotCrircles']['indexOf'](this['node']['name']), this['node']['getComponent'](c)['enabled'] = !0, this['hitFruits']['clear'](), this['holeCompBind'] = null, this['isNoLg'] = !1, this['initParameter'](), this['calculatedInfo_'] = t, this['setfruitScale'](), this['radius'] = this['calculatedInfo_']['radius'], this['holeComp'] = r, this['ID'] = t['fruitType'], this['fruitType'] = t['type'], 1 == this['fruitType'] && (this['iceCounts'] = t['unlockNum']), this['downOrgPos'] = h['v2'](t['pos'][At], t['pos'][St]), this['fruitCollider'] = this['node']['getComponent'](l) || this['node']['getComponent'](b), this['isCircle']) && (a = this['node']['getComponent'](l), (u = this['node']['getComponent'](b)) && (this['polygonInfo'] = function () {
+        var t, n = to, r = n[3], i = n[8], e = n[4];
+        return (t = function () {
+            var t, n, r = to[8], i = 'bindOffset', e = 'bindPoints';
+            return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['bindOffset'] = 0, n['bindPoints'] = 0, n;
+        }['apply']())['bindOffset'] = u['offset']['clone'](), t['bindPoints'] = u['points']['concat'](), t;
+    }['apply'](), u['enabled'] = !1, u['destroy']()), a ? (this['polygonInfo'] = function () {
+        var t, n = to, r = n[3], i = 'radius';
+        return (t = function () {
+            var t, n, r = to, i = 'bindOffset', e = 'radius';
+            return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['bindOffset'] = 0, n['radius'] = 0, n;
+        }['apply']())['bindOffset'] = a['offset']['clone'](), t['radius'] = a['radius'], t;
+    }['apply'](), this['squeezeCircle'] = a) : this['squeezeCircle'] = this['node']['addComponent'](l));
+    this['node']['setPosition'](t['pos'][At], t['pos'][St]), this['originPos']['set'](this['node']['position']), this['checkBound'](), this['scheduleOnce'](function () {
+        var t = to, r = t[10], a = 'squeezeCircle', u = 'restitution';
+        e['squeezeCircle'] && (e['squeezeCircle']['enabled'] = !0, e['squeezeCircle']['radius'] = e['getMaxRadius'](), e['squeezeCircle']['friction'] = 0, e['squeezeCircle']['restitution'] = e['restitution'], e['squeezeCircle']['apply'](), e['fruitCollider'] = e['squeezeCircle']), e['scheduleOnce'](function () {
+            var t = to;
+            e['setRigType'](d['Dynamic'], 0, !1);
+        }, 0), e['setFruitType'](), e['anim'](n, function () {
+            var t = to;
+            e['initContactCallBack'](), e['polygonInfo'] = null, 1 == e['fruitType'] ? i && i(e) : 3 == e['calculatedInfo_']['type'] ? i && i(e['holeComp']) : i && i();
+        }, 1.3);
+    }, 0);
+}
+
+=== anim | game.js:43 | UTF16 [224553, 225799) ===
+function (t, n, r) {
+    var i, e, a = to, u = a[2], s = a[0], o = a[3], c = a[8], f = 'setRigType', v = 'node', k = 'apply', p = 'fruitScale';
+    e = this, void 0 === r && (r = 0.8), i = function () {
+        var t, r = to, i = r[8], a = r[13], u = r[10], s = r[5], o = r[4], c = r[11], f = 'squeezeCircle', v = 'polygonInfo', k = 'bindPoints', m = 'node', p = 'fruitCollider', g = 'apply', y = 'radius', w = 'fruitType', _ = 'holeComp';
+        (e['squeezeCircle'] && (e['polygonInfo'] && e['polygonInfo']['bindPoints'] ? (e['node']['removeComponent'](l), e['fruitCollider'] = e['node']['addComponent'](b), e['fruitCollider']['enabled'] = !0, e['fruitCollider']['points'] = e['polygonInfo']['bindPoints'], e['fruitCollider']['offset'] = e['polygonInfo']['bindOffset'], e['fruitCollider']['apply'](), e['fruitRigidbody']['enabledContactListener'] = !0, e['squeezeCircle'] = null, e['polygonInfo'] = null) : e['polygonInfo'] && e['polygonInfo']['radius'] && (e['squeezeCircle']['radius'] = e['polygonInfo']['radius'], e['squeezeCircle']['apply'](), e['polygonInfo'] = null)), e['setRigType'](d['Static']), 3 != e['fruitType'] || e['holeComp']) || (e['fruitType'] = 0, t = x['ins']['getNode']('holeBg'), C['instance']['fruits']['insertChild'](t, 0), e['holeComp'] = t['getComponent'](A), e['holeComp']['init'](h['v2'](e['node'][At], e['node'][St]), e, e['calculatedInfo_']['holeFruitTyes']));
+        n && n();
+    }, t ? (this['holeComp'] ? this['setRigType'](d['Static'], 0, !1) : this['setRigType'](d['Dynamic'], 0, !1), m(this['node'])['to'](r, function () {
+        var t, n = to, r = n[3], i = 'fruitScale';
+        return (t = function () {
+            var t, n = 'scale';
+            return (t = Pu({}, n, 0))['scale'] = 0, t;
+        }['apply']())['scale'] = h['v3'](this['fruitScale'], this['fruitScale'], this['fruitScale']), t;
+    }['bind'](this)['apply'](), function () {
+        var t, n = to;
+        return (t = function () {
+            var t, n = 'easing';
+            return (t = Pu({}, n, 0))['easing'] = 0, t;
+        }['apply']())['easing'] = 'backOut', t;
+    }['apply']())['call'](function () {
+        var t = to, n = 'fruitScale';
+        e['node']['scale'] = h['v3'](e['fruitScale'], e['fruitScale'], e['fruitScale']), i();
+    })['start']()) : (this['node']['scale'] = h['v3'](this['fruitScale'], this['fruitScale'], this['fruitScale']), i());
+}
+
+=== getMaxRadius | game.js:43 | UTF16 [223724, 223789) ===
+function () {
+    var t = to;
+    return this['node']['getComponent'](s)['width'] / 2;
+}
+
+=== init2 | game.js:43 | UTF16 [223800, 224329) ===
+function (t, n, r, i) {
+    var e, a, u = to, s = u[7], o = u[3], c = u[11], f = u[6], v = u[2], k = u[8], m = 'fruitType', p = 'node', g = 'getComponent', y = 'pos';
+    a = this, this['hitFruits']['clear'](), this['initParameter'](), this['calculatedInfo_'] = t, this['setfruitScale'](), this['holeComp'] = r, this['ID'] = t['fruitType'], this['fruitType'] = t['type'], this['checkBound'](), this['fruitCollider'] = this['node']['getComponent'](l) || this['node']['getComponent'](b), this['squeezeCircle'] = null, this['setRigType'](d['Static']), this['node']['setPosition'](t['pos'][At], t['pos'][St]), this['originPos']['set'](this['node']['position']), e = this['fruitScale'] - 0.1, this['node']['scale'] = new h['Vec3'](e, e, e), this['initContactCallBack'](), this['anim'](n, function () {
+        a['polygonInfo'] = null, i && i();
+    });
+}
+
+=== changeToCircle | game.js:43 | UTF16 [336444, 336916) ===
+function (t) {
+    var n, r, i, e, a = to, u = a[10], s = a[9], o = a[4], c = 'getComponent', f = 'apply', h = 'enabled';
+    (i = null, n = t['getComponent'](d), r = t['getComponent'](k)) && (e = function () {
+        var t, n = to, i = n[3], e = n[8], a = n[4];
+        return (t = function () {
+            var t, n, r = to[8], i = 'bindOffset', e = 'bindPoints';
+            return Pu(t = {}, i, 0), Pu(t, e, 0), (n = t)['bindOffset'] = 0, n['bindPoints'] = 0, n;
+        }['apply']())['bindOffset'] = r['offset']['clone'](), t['bindPoints'] = r['points']['concat'](), t;
+    }['apply'](), r['enabled'] = !1, r['destroy'](), this['polygonInfo']['set'](t, e));
+    (i = n || t['addComponent'](d))['enabled'] = !0, i['radius'] = this['getMaxRadius'](t), i['friction'] = 0.05, i['restitution'] = 0, i['sensor'] = !1, i['apply']();
+}
+
+=== recycleFruit | game.js:43 | UTF16 [335871, 336429) ===
+function () {
+    for (var t = to, n = t[10], r = t[4], i = t[1], e = t[8], a = t[5], u = t[12], s = t[2], o = 'fruitcomList', c = 'polygonInfo', f = 'getComponent', v = 'node', m = 'getChildByName', p = 'walls', g = 'active', y = 0; y < this['fruitcomList']['length']; y++) {
+        var _, M, S, A, C;
+        if (_ = this['fruitcomList'][y], this['polygonInfo']['has'](_))
+            C = this['polygonInfo']['get'](_), S = _['getComponent'](d), (A = _['getComponent'](k)) || (A = _['addComponent'](k)), A['offset'] = C['bindOffset'], A['points'] = C['bindPoints'], A['enabled'] = !0, S['destroy']();
+        (M = _['getComponent'](l))['gravityScale'] = 0, M['allowSleep'] = !0, M['bullet'] = !1, M['angularVelocity'] = 0, M['linearVelocity'] = h['v2'](0, 0), M['angularDamping'] = 0, M['linearDamping'] = 0, M['enabledContactListener'] = !1, M['type'] = b['Static'], w['ins']['putNode'](_), this['node']['getChildByName'](p)['getChildByName']('left')['active'] = !1, this['node']['getChildByName'](p)['getChildByName']('right')['active'] = !1;
+    }
+}

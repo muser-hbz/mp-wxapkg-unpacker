@@ -1,0 +1,218 @@
+{
+  "InitCf": {
+    "excerpt_line": 9,
+    "source_line": 49,
+    "start": 600300,
+    "end": 600414
+  },
+  "initLvCfg": {
+    "excerpt_line": 24,
+    "source_line": 49,
+    "start": 697199,
+    "end": 697378
+  },
+  "initLvConfig": {
+    "excerpt_line": 30,
+    "source_line": 49,
+    "start": 697388,
+    "end": 704905
+  },
+  "getMaxType": {
+    "excerpt_line": 239,
+    "source_line": 49,
+    "start": 704915,
+    "end": 705009
+  },
+  "genLvMapData": {
+    "excerpt_line": 245,
+    "source_line": 49,
+    "start": 683828,
+    "end": 687723
+  },
+  "initItems": {
+    "excerpt_line": 350,
+    "source_line": 49,
+    "start": 687962,
+    "end": 690066
+  },
+  "shuffleArray": {
+    "excerpt_line": 412,
+    "source_line": 49,
+    "start": 695065,
+    "end": 695173
+  },
+  "getExptInfoSync": {
+    "excerpt_line": 423,
+    "source_line": 49,
+    "start": 779216,
+    "end": 779894
+  },
+  "overFun": {
+    "excerpt_line": 447,
+    "source_line": 43,
+    "start": 272691,
+    "end": 272843
+  },
+  "setUndergoLv": {
+    "excerpt_line": 453,
+    "source_line": 49,
+    "start": 602825,
+    "end": 602888
+  },
+  "getUndergoLv": {
+    "excerpt_line": 459,
+    "source_line": 49,
+    "start": 602899,
+    "end": 602965
+  },
+  "canPopupSlotItem": {
+    "excerpt_line": 465,
+    "source_line": 49,
+    "start": 714603,
+    "end": 714648
+  },
+  "addDeathScore": {
+    "excerpt_line": 470,
+    "source_line": 49,
+    "start": 714283,
+    "end": 714365
+  },
+  "addAdScore": {
+    "excerpt_line": 476,
+    "source_line": 49,
+    "start": 714376,
+    "end": 714458
+  },
+  "getReduceFruitTypeCount": {
+    "excerpt_line": 482,
+    "source_line": 49,
+    "start": 714473,
+    "end": 714593
+  },
+  "checkID": {
+    "excerpt_line": 488,
+    "source_line": 43,
+    "start": 232590,
+    "end": 234033
+  },
+  "checkLose": {
+    "excerpt_line": 523,
+    "source_line": 43,
+    "start": 270998,
+    "end": 271372
+  },
+  "checkSlotLose": {
+    "excerpt_line": 539,
+    "source_line": 43,
+    "start": 270002,
+    "end": 270725
+  },
+  "checkWin": {
+    "excerpt_line": 585,
+    "source_line": 43,
+    "start": 272551,
+    "end": 272679
+  },
+  "breakWall": {
+    "excerpt_line": 591,
+    "source_line": 43,
+    "start": 263661,
+    "end": 264988
+  },
+  "breakAllWall": {
+    "excerpt_line": 611,
+    "source_line": 43,
+    "start": 265081,
+    "end": 265576
+  },
+  "btnRemoveFun": {
+    "excerpt_line": 620,
+    "source_line": 43,
+    "start": 273324,
+    "end": 275194
+  },
+  "breakIceFun": {
+    "excerpt_line": 688,
+    "source_line": 43,
+    "start": 282131,
+    "end": 282337
+  },
+  "iceBox": {
+    "excerpt_line": 701,
+    "source_line": 43,
+    "start": 228272,
+    "end": 228380
+  },
+  "start": {
+    "excerpt_line": 708,
+    "source_line": 43,
+    "start": 251435,
+    "end": 252067
+  },
+  "initLevel": {
+    "excerpt_line": 720,
+    "source_line": 43,
+    "start": 252078,
+    "end": 254027
+  },
+  "winFun": {
+    "excerpt_line": 773,
+    "source_line": 43,
+    "start": 272854,
+    "end": 273314
+  },
+  "videoClick": {
+    "excerpt_line": 784,
+    "source_line": 43,
+    "start": 381860,
+    "end": 382428
+  },
+  "electricShock": {
+    "excerpt_line": 807,
+    "source_line": 43,
+    "start": 236081,
+    "end": 237011
+  },
+  "blitzkrieg": {
+    "excerpt_line": 840,
+    "source_line": 43,
+    "start": 288921,
+    "end": 289243
+  },
+  "SetCurLv": {
+    "excerpt_line": 851,
+    "source_line": 43,
+    "start": 304565,
+    "end": 304721
+  },
+  "AddCurLv": {
+    "excerpt_line": 857,
+    "source_line": 43,
+    "start": 304732,
+    "end": 304890
+  },
+  "getMatchFruit": {
+    "excerpt_line": 863,
+    "source_line": 43,
+    "start": 275272,
+    "end": 275904
+  },
+  "eliminateDataSort": {
+    "excerpt_line": 872,
+    "source_line": 43,
+    "start": 275915,
+    "end": 276215
+  },
+  "GbzPropSpecialLayer.onClose": {
+    "excerpt_line": 881,
+    "source_line": 43,
+    "start": 382441,
+    "end": 382556
+  },
+  "GbzSdkManager.showVideo": {
+    "excerpt_line": 887,
+    "source_line": 43,
+    "start": 409769,
+    "end": 410918
+  }
+}
